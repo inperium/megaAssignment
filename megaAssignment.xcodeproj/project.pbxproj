@@ -6,6 +6,11 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D89421381E4907E60057B2EF /* megaController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D89421361E4907E60057B2EF /* megaController.cpp */; };
+		D8C3391B1E490F5E00C00315 /* intNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C339191E490F5E00C00315 /* intNode.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D89421291E4904F00057B2EF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,7 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D894212B1E4904F10057B2EF /* megaAssignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = megaAssignment; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89421361E4907E60057B2EF /* megaController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = megaController.cpp; path = Controller/megaController.cpp; sourceTree = "<group>"; };
+		D89421371E4907E60057B2EF /* megaController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = megaController.hpp; path = Controller/megaController.hpp; sourceTree = "<group>"; };
+		D8C339151E490EE000C00315 /* megaAssignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = megaAssignment; path = "/Users/ibow9416/Documents/c+:-/megaAssignment/build/Debug/megaAssignment"; sourceTree = "<absolute>"; };
+		D8C339191E490F5E00C00315 /* intNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = intNode.cpp; sourceTree = "<group>"; };
+		D8C3391A1E490F5E00C00315 /* intNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = intNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,23 +46,34 @@
 			isa = PBXGroup;
 			children = (
 				D894212D1E4904F10057B2EF /* megaAssignment */,
-				D894212C1E4904F10057B2EF /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		D894212C1E4904F10057B2EF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D894212B1E4904F10057B2EF /* megaAssignment */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D894212D1E4904F10057B2EF /* megaAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				D8C339161E490F3000C00315 /* Model */,
+				D89421351E4907D50057B2EF /* Controller */,
+				D89421361E4907E60057B2EF /* megaController.cpp */,
+				D89421371E4907E60057B2EF /* megaController.hpp */,
 			);
 			path = megaAssignment;
+			sourceTree = "<group>";
+		};
+		D89421351E4907D50057B2EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D8C339161E490F3000C00315 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8C339191E490F5E00C00315 /* intNode.cpp */,
+				D8C3391A1E490F5E00C00315 /* intNode.hpp */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,7 +93,7 @@
 			);
 			name = megaAssignment;
 			productName = megaAssignment;
-			productReference = D894212B1E4904F10057B2EF /* megaAssignment */;
+			productReference = D8C339151E490EE000C00315 /* megaAssignment */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +119,7 @@
 				en,
 			);
 			mainGroup = D89421221E4904F00057B2EF;
-			productRefGroup = D894212C1E4904F10057B2EF /* Products */;
+			productRefGroup = D89421221E4904F00057B2EF;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -113,6 +133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89421381E4907E60057B2EF /* megaController.cpp in Sources */,
+				D8C3391B1E490F5E00C00315 /* intNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
