@@ -6,7 +6,7 @@
 //  Copyright © 2017 Bowen, Isaac. All rights reserved.
 //
 
-#include "intNode.hpp"
+#include "IntNode.hpp"
 
 IntNode :: IntNode()
 {
@@ -39,4 +39,9 @@ int IntNode :: getNodeData()
 IntNode * IntNode :: getNodePointer()
 {
     return this->nodePointer;
+}
+
+void IntNode :: setNodePointer(IntNode * next)
+{
+    nodePointer = next;
 }

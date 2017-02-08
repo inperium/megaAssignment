@@ -8,7 +8,7 @@
 
 #include "megaController.hpp"
 #include <iostream>
-#include "../Model/IntNode.hpp"
+#include "IntNodeArray.hpp"
 using namespace std;
 
 megaController :: megaController()
@@ -28,4 +28,11 @@ void megaController :: start()
 void megaController :: testIntArray()
 {
     cout << "Testing the array" << endl;
+    
+    IntNodeArray temp = IntNodeArray(3);
+    
+    for (int index = 0; index < 3; index++)
+    {
+        cout << temp.getFromIndex(index) << " is at spot " << index << endl;
+    }
 }
