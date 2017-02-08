@@ -6,27 +6,27 @@
 //  Copyright © 2017 Bowen, Isaac. All rights reserved.
 //
 
-#ifndef intNode_hpp
-#define intNode_hpp
+#ifndef IntNode_hpp
+#define IntNode_hpp
 
-class intNode
+class IntNode
 {
 private:
     int nodeData;
-    intNode * nodePointer;
+    IntNode * nodePointer;
 public:
     //Constructor
-    intNode();
-    intNode(int value);
+    IntNode();
+    IntNode(int value);
     //Creates an IntNode with a specified value and next
-    intNode(int value, intNode * nextNode);
+    IntNode(int value, IntNode * nextNode);
     
     //methods
     int getNodeData();
-    intNode * getNodePointer();
+    IntNode * getNodePointer();
     
     void setNodeData(int value);
-    void setNodepointer(intNode * next);
+    void setNodepointer(IntNode * next);
 };
 
 #endif /* intNode_hpp */

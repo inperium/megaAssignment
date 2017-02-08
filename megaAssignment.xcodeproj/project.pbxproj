@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D89421381E4907E60057B2EF /* megaController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D89421361E4907E60057B2EF /* megaController.cpp */; };
-		D8C3391B1E490F5E00C00315 /* intNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C339191E490F5E00C00315 /* intNode.cpp */; };
+		D8C3391B1E490F5E00C00315 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C339191E490F5E00C00315 /* IntNode.cpp */; };
+		D8C3F9971E4BA2CD00353D41 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F9951E4BA2CC00353D41 /* IntNodeArray.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,9 +27,11 @@
 /* Begin PBXFileReference section */
 		D89421361E4907E60057B2EF /* megaController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = megaController.cpp; path = Controller/megaController.cpp; sourceTree = "<group>"; };
 		D89421371E4907E60057B2EF /* megaController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = megaController.hpp; path = Controller/megaController.hpp; sourceTree = "<group>"; };
-		D8C339151E490EE000C00315 /* megaAssignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = megaAssignment; path = "/Users/ibow9416/Documents/c+:-/megaAssignment/build/Debug/megaAssignment"; sourceTree = "<absolute>"; };
-		D8C339191E490F5E00C00315 /* intNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = intNode.cpp; sourceTree = "<group>"; };
-		D8C3391A1E490F5E00C00315 /* intNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = intNode.hpp; sourceTree = "<group>"; };
+		D8C339191E490F5E00C00315 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntNode.cpp; sourceTree = "<group>"; };
+		D8C3391A1E490F5E00C00315 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IntNode.hpp; sourceTree = "<group>"; };
+		D8C3F9941E4BA08F00353D41 /* megaAssignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = megaAssignment; path = "/Users/ibow9416/Documents/c+:-/megaAssignment/build/Debug/megaAssignment"; sourceTree = "<absolute>"; };
+		D8C3F9951E4BA2CC00353D41 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntNodeArray.cpp; sourceTree = "<group>"; };
+		D8C3F9961E4BA2CC00353D41 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IntNodeArray.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +73,10 @@
 		D8C339161E490F3000C00315 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D8C339191E490F5E00C00315 /* intNode.cpp */,
-				D8C3391A1E490F5E00C00315 /* intNode.hpp */,
+				D8C339191E490F5E00C00315 /* IntNode.cpp */,
+				D8C3391A1E490F5E00C00315 /* IntNode.hpp */,
+				D8C3F9951E4BA2CC00353D41 /* IntNodeArray.cpp */,
+				D8C3F9961E4BA2CC00353D41 /* IntNodeArray.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -93,7 +98,7 @@
 			);
 			name = megaAssignment;
 			productName = megaAssignment;
-			productReference = D8C339151E490EE000C00315 /* megaAssignment */;
+			productReference = D8C3F9941E4BA08F00353D41 /* megaAssignment */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89421381E4907E60057B2EF /* megaController.cpp in Sources */,
-				D8C3391B1E490F5E00C00315 /* intNode.cpp in Sources */,
+				D8C3F9971E4BA2CD00353D41 /* IntNodeArray.cpp in Sources */,
+				D8C3391B1E490F5E00C00315 /* IntNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
