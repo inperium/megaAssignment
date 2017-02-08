@@ -9,6 +9,14 @@
 #ifndef megaController_hpp
 #define megaController_hpp
 
-#include <stdio.h>
+class megaController
+{
+private:
+    void testIntArray();
+    
+public:
+    megaController();
+    void start();
+};
 
 #endif /* megaController_hpp */
