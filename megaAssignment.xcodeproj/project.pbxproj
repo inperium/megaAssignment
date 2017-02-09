@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D89421381E4907E60057B2EF /* megaController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D89421361E4907E60057B2EF /* megaController.cpp */; };
-		D8C3391B1E490F5E00C00315 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C339191E490F5E00C00315 /* IntNode.cpp */; };
-		D8C3F9971E4BA2CD00353D41 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F9951E4BA2CC00353D41 /* IntNodeArray.cpp */; };
+		D8C3F9A01E4BBAB300353D41 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F99C1E4BBAB300353D41 /* IntNode.cpp */; };
+		D8C3F9A11E4BBAB300353D41 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F99E1E4BBAB300353D41 /* IntNodeArray.cpp */; };
+		D8C3F9A51E4BBABE00353D41 /* megaController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F9A21E4BBABE00353D41 /* megaController.cpp */; };
+		D8C3F9A61E4BBABE00353D41 /* megaRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F9A41E4BBABE00353D41 /* megaRunner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,13 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D89421361E4907E60057B2EF /* megaController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = megaController.cpp; path = Controller/megaController.cpp; sourceTree = "<group>"; };
-		D89421371E4907E60057B2EF /* megaController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = megaController.hpp; path = Controller/megaController.hpp; sourceTree = "<group>"; };
-		D8C339191E490F5E00C00315 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntNode.cpp; sourceTree = "<group>"; };
-		D8C3391A1E490F5E00C00315 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IntNode.hpp; sourceTree = "<group>"; };
 		D8C3F9941E4BA08F00353D41 /* megaAssignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = megaAssignment; path = "/Users/ibow9416/Documents/c+:-/megaAssignment/build/Debug/megaAssignment"; sourceTree = "<absolute>"; };
-		D8C3F9951E4BA2CC00353D41 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntNodeArray.cpp; sourceTree = "<group>"; };
-		D8C3F9961E4BA2CC00353D41 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IntNodeArray.hpp; sourceTree = "<group>"; };
+		D8C3F99C1E4BBAB300353D41 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
+		D8C3F99D1E4BBAB300353D41 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
+		D8C3F99E1E4BBAB300353D41 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
+		D8C3F99F1E4BBAB300353D41 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
+		D8C3F9A21E4BBABE00353D41 /* megaController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = megaController.cpp; path = Controller/megaController.cpp; sourceTree = "<group>"; };
+		D8C3F9A31E4BBABE00353D41 /* megaController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = megaController.hpp; path = Controller/megaController.hpp; sourceTree = "<group>"; };
+		D8C3F9A41E4BBABE00353D41 /* megaRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = megaRunner.cpp; path = Controller/megaRunner.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,6 @@
 			children = (
 				D8C339161E490F3000C00315 /* Model */,
 				D89421351E4907D50057B2EF /* Controller */,
-				D89421361E4907E60057B2EF /* megaController.cpp */,
-				D89421371E4907E60057B2EF /* megaController.hpp */,
 			);
 			path = megaAssignment;
 			sourceTree = "<group>";
@@ -66,6 +66,9 @@
 		D89421351E4907D50057B2EF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D8C3F9A21E4BBABE00353D41 /* megaController.cpp */,
+				D8C3F9A31E4BBABE00353D41 /* megaController.hpp */,
+				D8C3F9A41E4BBABE00353D41 /* megaRunner.cpp */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -73,10 +76,10 @@
 		D8C339161E490F3000C00315 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D8C339191E490F5E00C00315 /* IntNode.cpp */,
-				D8C3391A1E490F5E00C00315 /* IntNode.hpp */,
-				D8C3F9951E4BA2CC00353D41 /* IntNodeArray.cpp */,
-				D8C3F9961E4BA2CC00353D41 /* IntNodeArray.hpp */,
+				D8C3F99C1E4BBAB300353D41 /* IntNode.cpp */,
+				D8C3F99D1E4BBAB300353D41 /* IntNode.hpp */,
+				D8C3F99E1E4BBAB300353D41 /* IntNodeArray.cpp */,
+				D8C3F99F1E4BBAB300353D41 /* IntNodeArray.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D89421381E4907E60057B2EF /* megaController.cpp in Sources */,
-				D8C3F9971E4BA2CD00353D41 /* IntNodeArray.cpp in Sources */,
-				D8C3391B1E490F5E00C00315 /* IntNode.cpp in Sources */,
+				D8C3F9A11E4BBAB300353D41 /* IntNodeArray.cpp in Sources */,
+				D8C3F9A01E4BBAB300353D41 /* IntNode.cpp in Sources */,
+				D8C3F9A51E4BBABE00353D41 /* megaController.cpp in Sources */,
+				D8C3F9A61E4BBABE00353D41 /* megaRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
