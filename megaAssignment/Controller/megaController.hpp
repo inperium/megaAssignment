@@ -9,11 +9,18 @@
 #ifndef megaController_hpp
 #define megaController_hpp
 
+#include "../Model/Node.hpp"
+#include <string>
+
+using namespace std;
+
 class megaController
 {
 private:
     void testIntArray();
-    
+    Node<int> numberNode;
+    Node<string> wordNode;
+    void testNodes();
 public:
     megaController();
     void start();

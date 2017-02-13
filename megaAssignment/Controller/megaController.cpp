@@ -9,18 +9,29 @@
 #include "megaController.hpp"
 #include <iostream>
 #include "../Model/IntNodeArray.hpp"
+
 using namespace std;
 
 megaController :: megaController()
 {
+    wordNode = Node<string>("");
+    numberNode = Node<int>();
     
+}
+
+void megaController :: testNodes()
+{
+    cout << "The contents of the Node<string>test" << endl;
+    cout << wordNode.getNodeData() << endl;
+    cout << "Here is the Node<int>" << endl;
+    cout << numberNode.getNodeData() << endl;
 }
 
 void megaController :: start()
 {
     cout << "Starting the project" << endl;
     cout << "Switching to the array testing" << endl;
-    testIntArray();
+    testNodes();
     cout << "Finished testing" << endl;
     cout << "Finished testing" << endl;
 }
