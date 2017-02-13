@@ -9,7 +9,7 @@
 #include "megaController.hpp"
 
 int main(){
-    megaController mega = megaController();
-    mega.start();
+    megaController * mega = new megaController();
+    mega->start();
     return 0;
 }

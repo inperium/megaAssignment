@@ -9,6 +9,8 @@
 #ifndef IntNode_hpp
 #define IntNode_hpp
 
+#include <stdio.h>
+
 class IntNode
 {
 private:

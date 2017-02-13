@@ -19,7 +19,7 @@
 + setNodeData(int value) : void
 + setNodePointer(IntNode * next) : void
 
-+ intNode() : init
++ IntNode() : init
 + IntNode(int value) : init
 + IntNode(int value, IntNode * nextNode) : init</panel_attributes>
     <additional_attributes/>
@@ -41,6 +41,30 @@
 + setAtIndex(int index, int value) : void
 + getFromindex(int index) : int
 + getSize() : int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>370</y>
+      <w>290</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>SimpleClass
+--
+- nodeData : Type
+- nodePointer : Node&lt;Type&gt; *
+--
++ Node() : constructor
++ Node(Type value) : constructor
++ Node(Type data,Node,Type&gt; * pointer) : constructor
+
++ getNodeData() : Type
++ getNodePointer() : Node&lt;Type&gt; *
++ setNodeData(Type data) : void
++ setNodePointer(Node,Type * next) : void
 </panel_attributes>
     <additional_attributes/>
   </element>
