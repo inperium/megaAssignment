@@ -27,5 +27,63 @@ public:
     void setAtIndex(int index, Type value);
 };
 
+template <class Type>
+Array<Type> :: Array()
+{
+}
+
+template <class Type>
+Array<Type> :: Array(int size)
+{
+    assert(size > 0);
+    
+    this->size = front;
+    this->front = new Node<Type>();
+    
+    for(int index = 1; index < size; index++)
+    {
+        Node<Type>() * current = new Node<Type>();
+        current->setNodePointer(front);
+        front = current;
+    }
+}
+
+template <class Type>
+void Array<Type> :: setAtIndex(int index, Type value)
+{
+    assert(index >= 0 && index < size);
+    
+    Node<Type> * current = front;
+    for(int spot = 0; spot < index; spot++)
+    {
+        current = current->getNodePointer();
+    }
+    
+    current->setNodeData(value);
+}
+
+template <class Type>
+void Array<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < size);
+    
+    Type value;
+    
+    Node<Type> 8 current = front;
+    for(int position = 0; position <index; position++)
+    {
+        current = current->getNodePointer();
+    }
+    
+    value = current->getNodeData();
+    
+    return value;
+}
+
+template <class Type>
+int Array<Type> :: getSize()
+{
+    return size;
+}
 
 #endif /* Array_h */
