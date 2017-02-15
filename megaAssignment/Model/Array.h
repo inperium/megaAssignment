@@ -16,15 +16,15 @@ template <class Type>
 class Array
 {
 private:
-    Type nodeData;
-    Node<Type> * nodePointer;
+    int size;
+    Node<Type> * front;
 public:
     Array();
     Array(int size);
     
     int getSize();
     Type getFromIndex(int index);
-    void setAtIndex(int index, Type value)
+    void setAtIndex(int index, Type value);
 };
 
 
