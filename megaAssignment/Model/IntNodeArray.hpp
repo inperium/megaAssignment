@@ -10,6 +10,7 @@
 #define IntNodeArray_hpp
 
 #include "IntNode.hpp"
+#include <assert.h>
 
 class IntNodeArray
 {
