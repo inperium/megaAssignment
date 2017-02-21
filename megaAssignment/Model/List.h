@@ -17,8 +17,24 @@ private:
     int size;
     Node<Type> * front;
 public:
+    List<Type>();
+    List<Type>(const List<Type>&source);
+    ~List<Type>();
     
+    void addAtIndex(int index, Type value);
+    void add(Type value);
+    Type remove(int index);
+    Type setAtIndex(int index, Type data);
+    Type getFromIndex(int index, Type data);
+    Bool contains(Type data);
+    Int getSize(const);
     Node<Type> * getFront() const;
+    
 };
+
+template <class Type>
+List<Type> :: List()
+{
+}
 
 #endif /* List_h */

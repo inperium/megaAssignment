@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>230</x>
+      <x>60</x>
       <y>40</y>
       <w>330</w>
       <h>200</h>
@@ -27,7 +27,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
+      <x>470</x>
       <y>20</y>
       <w>290</w>
       <h>200</h>
@@ -47,7 +47,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>590</x>
+      <x>420</x>
       <y>300</y>
       <w>490</w>
       <h>210</h>
@@ -71,7 +71,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
+      <x>380</x>
       <y>360</y>
       <w>70</w>
       <h>40</h>
@@ -83,7 +83,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>170</x>
+      <x>0</x>
       <y>300</y>
       <w>390</w>
       <h>200</h>
@@ -106,7 +106,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
+      <x>380</x>
       <y>140</y>
       <w>110</w>
       <h>40</h>
@@ -118,7 +118,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>700</x>
+      <x>530</x>
       <y>530</y>
       <w>420</w>
       <h>270</h>
@@ -129,7 +129,7 @@ m2=1..n</panel_attributes>
 - front : Node&lt;Type&gt; *
 --
 +List&lt;Type&gt;() : constructor
-+List&lt;Type&lt;(constList&lt;Type&gt;&amp;source): copy constructor
++List&lt;Type&gt;(constList&lt;Type&gt;&amp;source): copy constructor
 +~List&lt;Type&gt;() : destructor
 
 +addAtIndex(int index, Type value) : void
@@ -138,7 +138,7 @@ m2=1..n</panel_attributes>
 +setAtIndex(int index, Type data) : Type
 +getFromIndex(int index, Type data) : Type
 +contains(Type data) : bool
-+getSize(0 const : int
++getSize(const) : int
 +getFront() const : Node&lt;Type&gt; *
 </panel_attributes>
     <additional_attributes/>
