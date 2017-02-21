@@ -60,6 +60,9 @@
 + Array() : constructor
 + Array(int size) : constructor
 
++ ~Array&lt;Type&gt;() : destructor
++ Array&lt;Type&gt;(const Array&lt;Type&gt; &amp; toBeCopied) : copy constructor
+
 + getSize() : int
 + setAtIndex(int index, Type value) : void
 + getFromIndex(int index) : Type</panel_attributes>
