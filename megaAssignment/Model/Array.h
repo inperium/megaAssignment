@@ -44,7 +44,7 @@ Array<Type> :: Array(int size)
 {
     assert(size > 0);
     
-    this->size = front;
+    this->size = size;
     this->front = new Node<Type>();
     
     for(int index = 1; index < size; index++)
@@ -102,12 +102,12 @@ Array<Type> :: ~Array()
     Node<Type> * remove = front;
     while(front != nullptr)
     {
-        front = front ->getnodePointer();
+        front = front ->getNodePointer();
         cout << "Moving to the next node at: " << count << endl;
         remove = front;
         cout << "Moving to new front pointer." << endl;
         count--;
-        cout << "Front is at: " << front << " count is: " << cout << endl;
+        cout << "Front is at: " << front << " count is: " << count << endl;
     }
 }
 
@@ -123,9 +123,9 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
         Node<Type> * updated = this->front;
         for(int index = 0; index < size; index++)
         {
-            updated->setNodeData(copyTemp->getnodeData());
-            updated = copyTemp->getnodePointer();
-            copyTemp = copyTemp->getNodePointer;
+            updated->setNodeData(copyTemp->getNodeData());
+            updated = copyTemp->getNodePointer();
+            copyTemp = copyTemp->getNodePointer();
         }
     }
 }

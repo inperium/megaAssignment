@@ -22,6 +22,7 @@ private:
     Node<int> numberNode;
     Node<string> wordNode;
     void testNodes();
+    void testAdvancedFeatures();
 public:
     megaController();
     void start();

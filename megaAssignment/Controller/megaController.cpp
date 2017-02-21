@@ -31,8 +31,7 @@ void megaController :: start()
 {
     cout << "Starting the project" << endl;
     cout << "Switching to the array testing" << endl;
-    testNodes();
-    cout << "Finished testing" << endl;
+    testAdvancedFeatures();
     cout << "Finished testing" << endl;
 }
     
@@ -59,5 +58,24 @@ void megaController :: testIntArray()
     {
         cout << temp.getFromIndex(index) << " is at spot " << index << endl;
     }
+}
+
+void megaController :: testAdvancedFeatures()
+{
+    int showDestructor = 0;
     
+    if(showDestructor < 1)
+    {
+        Array<string> words = Array<string>(5);
+        cout << "There should be messages about hte destructor next" << endl;
+    }
+    Array<string> words = Array<string>(4);
+    words.setAtIndex(0, "at zero");
+    words.setAtIndex(3, "in the Last spot");
+    Array<string> copiedWords = Array<string>(4);
+    
+    cout << "These should match: " << endl;
+    cout << words.getFromIndex(0) << " should be the same as " << copiedWords.getFromIndex(0) << endl;
+    
+    copiedWords.setAtIndex(3, "Changed the contents of hte copied Array");
 }
