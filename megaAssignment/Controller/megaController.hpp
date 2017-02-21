@@ -10,6 +10,7 @@
 #define megaController_hpp
 
 #include "../Model/Node.hpp"
+#include "../Model/Array.h"
 #include <string>
 
 using namespace std;

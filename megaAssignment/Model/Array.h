@@ -11,6 +11,8 @@
 
 #include "Node.hpp"
 #include <assert.h>
+#include <iostream>
+using namespace std;
 
 template <class Type>
 class Array
@@ -26,9 +28,10 @@ public:
     Array<Type>(const Array<Type> & toBeCopied);
     
     
-    int getSize();
+    int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type value);
+    Node<Type> * getFront() const;
 };
 
 template <class Type>
@@ -46,7 +49,7 @@ Array<Type> :: Array(int size)
     
     for(int index = 1; index < size; index++)
     {
-        Node<Type>() * current = new Node<Type>();
+        Node<Type> * current = new Node<Type>();
         current->setNodePointer(front);
         front = current;
     }
@@ -67,13 +70,13 @@ void Array<Type> :: setAtIndex(int index, Type value)
 }
 
 template <class Type>
-void Array<Type> :: getFromIndex(int index)
+Type Array<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < size);
     
     Type value;
     
-    Node<Type> 8 current = front;
+    Node<Type> * current = front;
     for(int position = 0; position <index; position++)
     {
         current = current->getNodePointer();
@@ -93,7 +96,7 @@ int Array<Type> :: getSize() const
 //De-Allocate memory, prevents memory link. Not called by the programmer - happens
 //when variable is out of the scope. Count and cout are also temporary.
 template <class Type>
-Array<Ttype> :: ~Array()
+Array<Type> :: ~Array()
 {
     int count = size;
     Node<Type> * remove = front;
@@ -127,7 +130,7 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     }
 }
 
-template <class type>
+template <class Type>
 Node<Type> * Array<Type> :: getFront() const
 {
     return front;
