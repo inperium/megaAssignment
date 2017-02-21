@@ -85,9 +85,51 @@ void Array<Type> :: getFromIndex(int index)
 }
 
 template <class Type>
-int Array<Type> :: getSize()
+int Array<Type> :: getSize() const
 {
     return size;
 }
 
+//De-Allocate memory, prevents memory link. Not called by the programmer - happens
+//when variable is out of the scope. Count and cout are also temporary.
+template <class Type>
+Array<Ttype> :: ~Array()
+{
+    int count = size;
+    Node<Type> * remove = front;
+    while(front != nullptr)
+    {
+        front = front ->getnodePointer();
+        cout << "Moving to the next node at: " << count << endl;
+        remove = front;
+        cout << "Moving to new front pointer." << endl;
+        count--;
+        cout << "Front is at: " << front << " count is: " << cout << endl;
+    }
+}
+
+template <class Type>
+Array<Type> :: Array(const Array<Type> & toBeCopied)
+{
+    this->size = toBeCopied.getSize();
+    
+    this->front = new Node<Type>();
+    for(int index = 1; index < size; index++)
+    {
+        Node<Type> * copyTemp = toBeCopied.getFront();
+        Node<Type> * updated = this->front;
+        for(int index = 0; index < size; index++)
+        {
+            updated->setNodeData(copyTemp->getnodeData());
+            updated = copyTemp->getnodePointer();
+            copyTemp = copyTemp->getNodePointer;
+        }
+    }
+}
+
+template <class type>
+Node<Type> * Array<Type> :: getFront() const
+{
+    return front;
+}
 #endif /* Array_h */
