@@ -20,21 +20,62 @@ public:
     List<Type>();
     List<Type>(const List<Type>&source);
     ~List<Type>();
+    List<Type>& operator = (const List<Type> & replacing);
+    
+    int getSize(const);
+    Node<Type> * getFront() const;
+    Node<Type> * getEnd() const;
     
     void addAtIndex(int index, Type value);
-    void add(Type value);
+    void addFront(Type value);
+    void addEnd(Type value);
     Type remove(int index);
     Type setAtIndex(int index, Type data);
     Type getFromIndex(int index, Type data);
-    Bool contains(Type data);
-    Int getSize(const);
-    Node<Type> * getFront() const;
-    
+    bool contains(Type data);
 };
 
 template <class Type>
 List<Type> :: List()
 {
 }
+
+template <class Type>
+void List<Type> :: addFront(Type value)
+{
+    if(size ==0)
+    {
+        Node<Type> * newFirst = new Node<Type>();
+        this->front = first;
+        this-> first;
+    }
+    else
+    {
+        Node<Type> * newFirst = new Node<Type.(value, front);
+        this->front = newFirst;
+    }
+    
+    size++;
+}
+
+template <class Type>
+void List<Type> :: addFront(Type value)
+{
+    Node<Type> * added = new Node<Type>(data);
+    if(size ==0)
+    {
+        this->front = added;
+        this-end = added;
+    }
+    else
+    {
+        end->setNodePointer(added);
+        this->end = added;
+    }
+    
+    size++;
+}
+
+
 
 #endif /* List_h */
