@@ -76,6 +76,26 @@ void List<Type> :: addFront(Type value)
     size++;
 }
 
-
+template <class Type>
+void List<Type> :: addFront(Type value)
+{
+    assert (index >= 0 && index <= size);
+    if(index == 0)
+    {
+        addFront(value);
+    }
+    else if(index == size)
+    {
+        addEnd(value);
+    }
+    
+    else{
+        Node<Type> * insertedNode = new Node<Type>(value);
+        Node<Type> * current = front;
+        Node<Type> * previous = nullptr;
+    }
+    
+    size++;
+}
 
 #endif /* List_h */
