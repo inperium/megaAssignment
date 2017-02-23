@@ -12,6 +12,7 @@
 #include "../Model/Node.hpp"
 #include "../Model/Array.h"
 #include <string>
+#include "List.h"
 
 using namespace std;
 
