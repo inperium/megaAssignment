@@ -9,6 +9,7 @@
 #include "megaController.hpp"
 #include <iostream>
 #include "../Model/IntNodeArray.hpp"
+#include "../Model/List.h"
 
 using namespace std;
 
@@ -29,10 +30,7 @@ void megaController :: testNodes()
 
 void megaController :: start()
 {
-    cout << "Starting the project" << endl;
-    cout << "Switching to the array testing" << endl;
-    testAdvancedFeatures();
-    cout << "Finished testing" << endl;
+    testList();
 }
     
 void megaController :: testIntArray()
@@ -67,7 +65,7 @@ void megaController :: testAdvancedFeatures()
     if(showDestructor < 1)
     {
         Array<string> words = Array<string>(5);
-        cout << "There should be messages about hte destructor next" << endl;
+        cout << "There should be messages about the destructor next" << endl;
     }
     Array<string> words = Array<string>(4);
     words.setAtIndex(0, "at zero");
@@ -78,4 +76,25 @@ void megaController :: testAdvancedFeatures()
     cout << words.getFromIndex(0) << " should be the same as " << copiedWords.getFromIndex(0) << endl;
     
     copiedWords.setAtIndex(3, "Changed the contents of hte copied Array");
+}
+
+void megaController :: testList()
+{
+    List<string> theList;
+    theList.addFront("method ");
+    theList.addEnd("works");
+    theList.addFront("The add");
+    theList.addEnd("as it should.");
+    
+    for(int index = 0; index < theList.getSize(); index++)
+    {
+        cout << theList.getFromIndex(index) << endl;
+    }
+    
+    for(int index = 0; index < theList.getSize(); index++)
+    {
+        cout << theList.remove(index) << endl;
+    }
+    
+    
 }

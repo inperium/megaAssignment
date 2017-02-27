@@ -24,6 +24,7 @@ private:
     Node<string> wordNode;
     void testNodes();
     void testAdvancedFeatures();
+    void testList();
 public:
     megaController();
     void start();
