@@ -125,7 +125,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>560</x>
+      <x>550</x>
       <y>520</y>
       <w>420</w>
       <h>270</h>
@@ -156,40 +156,56 @@ bg=cyan</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLClass</id>
+    <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>560</y>
-      <w>390</w>
-      <h>200</h>
+      <x>450</x>
+      <y>430</y>
+      <w>120</w>
+      <h>230</h>
     </coordinates>
-    <panel_attributes>Node&lt;Type&gt;
---
-- nodeData : Type
-- nodePointer : Node&lt;Type&gt; *
---
-+ Node() : constructor
-+ Node(Type value) : constructor
-+ Node(Type data, Node&lt;Type&gt; * pointer) : constructor
-
-+ getNodeData() : Type
-+ getNodePointer() : Node&lt;Type&gt; *
-+ setNodeData() : Void
-+ setNodePointer(Node&lt;Type&gt; * next) : void
-
-bg=red</panel_attributes>
-    <additional_attributes/>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=0..n</panel_attributes>
+    <additional_attributes>100.0;210.0;50.0;210.0;50.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
-      <y>640</y>
-      <w>120</w>
-      <h>40</h>
+      <x>210</x>
+      <y>470</y>
+      <w>30</w>
+      <h>90</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=1..n</panel_attributes>
-    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>540</y>
+      <w>430</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>BiDirectionalNode&lt;Type&gt;
+--
+- nodeData : int
+- previous : biDirectionNode&lt;Type&gt; *
+- next : biDirectionNode&lt;Type&gt; *
+--
+
++ BiDirectionalNode() : constructor
++ BiDirectionalNode(Type data) : constructor
++ BiDirectionalNode(Type data, BiDirectionalNode&lt;Type&gt; 
+	* previous, BiDirectionalNode&lt;Type&gt; * next) : constructor
+
++ getNodeData() : Type
++ setNodeData() : void
++ getPreviousNode() : BiDirectionalNode&lt;Type&gt; *
++ setPreviousNode(BiDirectionalNode&lt;Type&gt; * previous) : void
++ getNextNode(BiDirectionalNode&lt;Type&gt; *
++ setNextNode(BiDirectionalNode&lt;Type&gt; * next) : void
+
+bg=blue</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
