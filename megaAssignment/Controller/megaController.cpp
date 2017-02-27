@@ -96,5 +96,16 @@ void megaController :: testList()
         cout << theList.remove(index) << endl;
     }
     
+    theList.addFront("The list is as new");
+    theList.addFront("Now it contains these words");
     
+    for(int index = 0; index < theList.getSize(); index++)
+    {
+        cout << theList.getFromIndex(index) << endl;
+    }
+    
+    if (theList.contains("words"))
+    {
+        cout << "The contains function works" << endl;
+    }
 }
