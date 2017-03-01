@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
+      <x>360</x>
       <y>20</y>
       <w>330</w>
       <h>200</h>
@@ -29,7 +29,7 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>440</x>
+      <x>770</x>
       <y>0</y>
       <w>290</w>
       <h>200</h>
@@ -50,7 +50,7 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>530</x>
+      <x>860</x>
       <y>280</y>
       <w>490</w>
       <h>210</h>
@@ -76,7 +76,7 @@ bg=orange</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
+      <x>750</x>
       <y>340</y>
       <w>130</w>
       <h>40</h>
@@ -88,7 +88,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
+      <x>370</x>
       <y>280</y>
       <w>390</w>
       <h>200</h>
@@ -113,7 +113,7 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
+      <x>680</x>
       <y>120</y>
       <w>110</w>
       <h>40</h>
@@ -125,7 +125,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>520</x>
+      <x>850</x>
       <y>520</y>
       <w>420</w>
       <h>270</h>
@@ -158,7 +158,7 @@ bg=cyan</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
+      <x>750</x>
       <y>430</y>
       <w>120</w>
       <h>230</h>
@@ -170,7 +170,7 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
+      <x>510</x>
       <y>470</y>
       <w>30</w>
       <h>90</h>
@@ -181,7 +181,7 @@ m2=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>330</x>
       <y>540</y>
       <w>430</w>
       <h>310</h>
@@ -211,8 +211,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1040</x>
-      <y>600</y>
+      <x>370</x>
+      <y>930</y>
       <w>360</w>
       <h>230</h>
     </coordinates>
@@ -237,8 +237,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1290</x>
-      <y>820</y>
+      <x>620</x>
+      <y>1150</y>
       <w>100</w>
       <h>100</h>
     </coordinates>
@@ -248,8 +248,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1230</x>
-      <y>820</y>
+      <x>560</x>
+      <y>1150</y>
       <w>30</w>
       <h>130</h>
     </coordinates>
@@ -259,8 +259,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1100</x>
-      <y>820</y>
+      <x>430</x>
+      <y>1150</y>
       <w>100</w>
       <h>100</h>
     </coordinates>
@@ -270,34 +270,60 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1120</x>
-      <y>930</y>
+      <x>450</x>
+      <y>1260</y>
       <w>240</w>
       <h>230</h>
     </coordinates>
-    <panel_attributes>Stack</panel_attributes>
+    <panel_attributes>Stack
+--
+
+--
++ add(Type data) : void
++ remove(int index) : Type</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1370</x>
-      <y>880</y>
-      <w>230</w>
-      <h>210</h>
+      <x>700</x>
+      <y>1210</y>
+      <w>300</w>
+      <h>270</h>
     </coordinates>
-    <panel_attributes>CircularlyLinkedList</panel_attributes>
+    <panel_attributes>CircularlyLinkedList
+--
+- front : BiDirectionalNode *
+--
+
++add(Type) : void
++addAtIndex(int index, Type data) : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>880</x>
-      <y>880</y>
-      <w>230</w>
-      <h>210</h>
+      <x>130</x>
+      <y>1210</y>
+      <w>310</w>
+      <h>270</h>
     </coordinates>
-    <panel_attributes>Queue</panel_attributes>
+    <panel_attributes>Queue
+--
+
+--</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>840</y>
+      <w>50</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1..n</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
