@@ -25,7 +25,14 @@ public:
 template <class Type>
 CircularList<Type> :: CircluarList() : DoublyLinkedList()
 {
+
+}
+
+template <class Type>
+void CircluarList<Type> :: add(Type data)
+{
     
 }
+
 
 #endif /* CircularList_h */
