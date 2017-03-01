@@ -241,5 +241,4 @@ bool List<Type> :: contains(Type findMe)
     return isInList;
 }
 
-
 #endif /* List_h */
