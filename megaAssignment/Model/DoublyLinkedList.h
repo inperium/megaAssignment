@@ -20,8 +20,12 @@ private:
     int size;
 public:
     getSize() const;
+    virtual ~DoublyLinkedList() = 0;
     BiDirectionalNode<Type> * getFront() const;
     BiDirectionalNode<Type> * getEnd() const;
+    
+    virtual void add(Type data) = 0;
+    virtual Type remov(int index) = 0;
 };
 
 #endif /* DoublyLinkedList_h */
