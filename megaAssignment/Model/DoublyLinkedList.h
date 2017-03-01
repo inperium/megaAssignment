@@ -31,6 +31,13 @@ public:
 };
 
 template <class Type>
+DoublyLinkedList<Type> :: DoublyLinkedList()
+{
+    size = 0;
+    front = nullptr;
+    end = nullptr;
+}
+template <class Type>
 int CoubleLinkedList<Type> :: getSize()
 {
     return size;
