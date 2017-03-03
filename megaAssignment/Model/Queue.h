@@ -78,7 +78,26 @@ Type Queue<Type> :: remove(int index)
  */
 
 template <class Type>
-Type
+Type Queue<Type> :: dequeue()
+{
+    assert(this->getSize() > 0);
+    Type removedValue = this->getFront()->getNodeData();
+    BiDirectionalNode<Type> * removeMe = front:
+    
+    if(this-getSize() == 1)
+    {
+        this->setEnd(nullptr);
+        this->setFront(nullptr);
+    }
+    else
+    {
+        this->setFront(removeMe->getNextPointer());
+    }
+    delete removeMe;
+    this->setSize(this->getSize()-1);
+    
+    return removedValue;
+}
 
 
 #endif /* Queue_h */
