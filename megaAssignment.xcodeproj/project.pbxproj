@@ -32,6 +32,7 @@
 		D8439F491E67684F00983F27 /* CircularList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CircularList.h; path = Model/CircularList.h; sourceTree = "<group>"; };
 		D8ABF4901E64C7090011A1F8 /* BiDirectionalNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BiDirectionalNode.h; path = Model/BiDirectionalNode.h; sourceTree = "<group>"; };
 		D8B1DCE41E54E39300354796 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Model/Array.h; sourceTree = "<group>"; };
+		D8C2F4041E6A056D00CE4465 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = Model/Queue.h; sourceTree = "<group>"; };
 		D8C3F99C1E4BBAB300353D41 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		D8C3F99D1E4BBAB300353D41 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
 		D8C3F99E1E4BBAB300353D41 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 				D8ABF4901E64C7090011A1F8 /* BiDirectionalNode.h */,
 				D8439F471E675D0400983F27 /* DoublyLinkedList.h */,
 				D8439F491E67684F00983F27 /* CircularList.h */,
+				D8C2F4041E6A056D00CE4465 /* Queue.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";

@@ -228,8 +228,8 @@ bg=blue</panel_attributes>
 + getSize() const : int
 + getFront() : const : BiDirectionalNode&lt;Type&gt; *
 + getEnd() const : BiDirectionalNode&lt;Type&gt; *
-+ setFront
-+ setEnd
++ setFront() : BiDirectionalNode&lt;Type&gt; * front
++ setEnd() : BiDirectionalNode&lt;Type&gt; * end
 + setSize() const : int
 
 bg=yellow</panel_attributes>
@@ -301,9 +301,9 @@ bg=yellow</panel_attributes>
       <w>300</w>
       <h>270</h>
     </coordinates>
-    <panel_attributes>Moddel :: CircularlyLinkedList&lt;Type&gt;
+    <panel_attributes>Model :: CircularlyLinkedList&lt;Type&gt;
 --
--front: BiDirectionalNode&lt;Type. *
+-front: BiDirectionalNode&lt;Type&gt; *
 -end: BiDirectionalNode&lt;Type&gt; *
 -size : int
 --
@@ -349,5 +349,27 @@ bg=yellow</panel_attributes>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=1..n</panel_attributes>
     <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>930</y>
+      <w>410</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>SimpleClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>1020</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
   </element>
 </diagram>

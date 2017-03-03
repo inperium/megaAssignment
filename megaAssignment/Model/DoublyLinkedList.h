@@ -65,6 +65,12 @@ BiDirectionaNode<Type> * DoublyLinkedList<Type> :: getEnd()
     return end;
 }
 
+template <class Type>
+BiDirectionaNode<Type> * DoublyLinkedList<Type> :: getSize()
+{
+    return size;
+}
+
     
 //Setters
 template <class Type>
@@ -74,9 +80,15 @@ BiDirectionaNode<Type> * DoublyLinkedList<Type> :: setSize(int size)
 }
     
 template <class Type>
-BiDirectionaNode<Type> * DoublyLinkedList<Type> :: setFront(int size)
+BiDirectionaNode<Type> * DoublyLinkedList<Type> :: setFront(BiDirectionalNode<Type> * front)
 {
     this->front = front;
+}
+
+template <class Type>
+BiDirectionaNode<Type> * DoublyLinkedList<Type> :: setFront(BiDirectionalNode<Type> * end)
+{
+    this->end = end;
 }
     
 
