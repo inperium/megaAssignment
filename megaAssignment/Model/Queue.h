@@ -32,11 +32,11 @@ void Queue<Type> :: add(Type value)
 }
 
 /*
-    Add to Queue:
-    Create Node
-    If First - adjust front
-    else add to end
-    move end
+ Add to Queue:
+ Create Node
+ If First - adjust front
+ else add to end
+ move end
  adjust size
  */
 template <class Type>
@@ -55,5 +55,30 @@ void Queue<Type> :: enqueue(Type instertedValue)
     this->setEnd(added);
     this->setSize(this->getSize() + 1);
 }
+
+/*
+ Remove from QUEUE
+ check valid index and size
+ call dequeue
+ */
+
+template <class Type>
+Type Queue<Type> :: remove(int index)
+{
+    assert(index == 0  && this->getSize() > 0);
+    return dequeue();
+}
+/*
+ Check size
+ if size 1 adjust front & end to null
+ else move front to next
+ delete node
+ adjust size
+ return value
+ */
+
+template <class Type>
+Type
+
 
 #endif /* Queue_h */
