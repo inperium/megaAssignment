@@ -28,6 +28,10 @@ public:
     
     virtual void add(Type data) = 0;
     virtual Type remov(int index) = 0;
+    
+    void setFront(BiDirectionalNode<Type> * front):
+    void setSize(int updated);
+    void setEnd(BiDirectionalNode<Type> * end):
 };
 
 template <class Type>
@@ -38,22 +42,42 @@ DoublyLinkedList<Type> :: DoublyLinkedList()
     end = nullptr;
 }
 template <class Type>
+DoublyLinkedList<Type> :: ~DoublyLinkedList()
+{
+
+}
+template <class Type>
 int CoubleLinkedList<Type> :: getSize()
 {
     return size;
 }
 
 template <class Type>
-BiDirectionaNode<Type> * DoublyLinkedList<Type :: getFront()
+BiDirectionaNode<Type> * DoublyLinkedList<Type> :: getFront()
 {
     return front;
 }
 
 
 template <class Type>
-BiDirectionaNode<Type> * DoublyLinkedList<Type :: getEnd()
+BiDirectionaNode<Type> * DoublyLinkedList<Type> :: getEnd()
 {
     return end;
 }
+
+    
+//Setters
+template <class Type>
+BiDirectionaNode<Type> * DoublyLinkedList<Type> :: setSize(int size)
+{
+    this->size = size;
+}
+    
+template <class Type>
+BiDirectionaNode<Type> * DoublyLinkedList<Type> :: setFront(int size)
+{
+    this->front = front;
+}
+    
 
 #endif /* DoublyLinkedList_h */
