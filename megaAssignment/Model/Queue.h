@@ -25,10 +25,28 @@ public:
     Type peek();
 };
 
+
+template <class Type>
+void Queue<Type> :: Queue() : DoublyLinkedList<Type>()
+{
+}
+
+template <class Type>
+void Queue<Type> :: ~Queue()
+{
+    BiDirectionalNode<Type. * remove = this->getFront();
+    while(this->getFront() != nullptr)
+    {
+        this->setFront(this->getFront()->getNextPointer());
+        delete remove;
+        remove = this->getFront();
+    }
+}
+
 template <class Type>
 void Queue<Type> :: add(Type value)
 {
-    add(value);
+    enqueue(value);
 }
 
 /*
@@ -97,6 +115,14 @@ Type Queue<Type> :: dequeue()
     this->setSize(this->getSize()-1);
     
     return removedValue;
+}
+
+template <class Type.
+Type Queue<Type> :: peek()
+{
+    assert(this->getSize() > 0);
+    
+    return this->getFront()->getNodeData();
 }
 
 
