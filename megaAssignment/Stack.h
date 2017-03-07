@@ -32,17 +32,6 @@ Stack<Type> :: Stack() : DoublyLinkedList<Type>()
 {
     
 }
-template <class Type>
-Stack<Type> :: Stack() : DoublyLinkedList<type>()
-{
-    
-}
-
-template <class Type>
-Stack<Type. :: Stack() : doublyLinkedList<Type>()
-{
-    
-}
 
 template <class Type>
 Stack<Type> :: ~Stack()
@@ -96,6 +85,13 @@ void Stack<Type> :: pop()
     this-setSize(this->getSize() - 1);
     
     return removed;
+}
+
+template <class Type>
+Type Stack<Type> :: peek()
+{
+    assert(this0>getSize() > 0);
+    return this->getEnd()->getNodeData();
 }
     
 #endif /* Stack_h */
