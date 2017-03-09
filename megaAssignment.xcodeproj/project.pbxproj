@@ -40,8 +40,9 @@
 		D8C3F9A21E4BBABE00353D41 /* megaController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = megaController.cpp; path = Controller/megaController.cpp; sourceTree = "<group>"; };
 		D8C3F9A31E4BBABE00353D41 /* megaController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = megaController.hpp; path = Controller/megaController.hpp; sourceTree = "<group>"; };
 		D8C3F9A41E4BBABE00353D41 /* megaRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = megaRunner.cpp; path = Controller/megaRunner.cpp; sourceTree = "<group>"; };
-		D8D116F61E6F4B15000E1CF7 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		D8D480DE1E5CD99A00A1695E /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = Model/List.h; sourceTree = "<group>"; };
+		D8DEF4881E71DCBF00170A3D /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stack.h; path = Model/Stack.h; sourceTree = "<group>"; };
+		D8DEF4891E71DCF300170A3D /* DoubleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoubleList.h; path = Model/DoubleList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +94,11 @@
 				D8B1DCE41E54E39300354796 /* Array.h */,
 				D8D480DE1E5CD99A00A1695E /* List.h */,
 				D8ABF4901E64C7090011A1F8 /* BiDirectionalNode.h */,
+				D8DEF4881E71DCBF00170A3D /* Stack.h */,
 				D8439F471E675D0400983F27 /* DoublyLinkedList.h */,
 				D8439F491E67684F00983F27 /* CircularList.h */,
 				D8C2F4041E6A056D00CE4465 /* Queue.h */,
-				D8D116F61E6F4B15000E1CF7 /* Stack.h */,
+				D8DEF4891E71DCF300170A3D /* DoubleList.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";

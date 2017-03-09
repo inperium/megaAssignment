@@ -109,3 +109,44 @@ void megaController :: testList()
         cout << "The contains function works" << endl;
     }
 }
+
+void megaController :: testListTiming()
+{
+    DoubleList<int> timingList;
+    Timer totalTimer;
+    totalTimerstartTimer();
+    for(int index = 0; index < 100000; index++)
+    {
+        timingList.add(rand());
+    }
+    
+    long slowTime [1000];
+    long fastTime[1000]];
+    double averageSlow = 000, averageFast = 0.00;
+    Timer doubleTimer;
+    
+    for(int index = 0; index < 1000; index++)
+    {
+        int randomIndex = rand() % 10000;
+        doubleTimer.startTimer();
+        timingList.getFromIndex(randomIndex);
+        doubleTimer.stopTimer();
+        slowTime[index] = doubleTimergetExecuionTimeinMicroseconds();
+        doubleTimer.resetTimer();
+        
+        doubleTimer.startTimer();
+        timigListgetFroIndxFast(randomIndex);
+        doubleTimer.stopTimer();
+        fastTime[index] = doubleTimer.getExecutionTimeInMidcroseconds();
+        doubleTimer.resetTimer();
+        
+        averageSlow += slowTime[index];
+        averageFast += fastTime[index];
+    }
+    
+    averageSlow = averageSlow/1000.00;
+    averageFst = averageFast/1000.00;
+    totalTimer.stopTimer();
+    
+    cout << "The average speed for the getFromIndex was " << endl;
+}

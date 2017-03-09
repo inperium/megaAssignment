@@ -13,6 +13,7 @@
 #include "../Model/Array.h"
 #include <string>
 #include "List.h"
+#include "../Model/DoubleList.h"
 
 using namespace std;
 
@@ -25,6 +26,7 @@ private:
     void testNodes();
     void testAdvancedFeatures();
     void testList();
+    void testListTiming();
 public:
     megaController();
     void start();

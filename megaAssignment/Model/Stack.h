@@ -57,7 +57,7 @@ void Stack<Type> :: push(Type addedThing)
     this->setEnd(addToStack);
     this->setSize(this->getSize()+1);
 }
-
+ß
 template <class Type>
 void Stack<Type> :: remove(int index)
 {
