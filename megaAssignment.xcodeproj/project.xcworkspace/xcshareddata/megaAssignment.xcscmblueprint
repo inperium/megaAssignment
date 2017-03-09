@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7A7ED908DB4958BC3C93905D6ECE163EDD5F3B53",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "59B8BA9AA44656F9F97DBDEC345CC6CD3103E7D0" : 9223372036854775807,
+    "7A7ED908DB4958BC3C93905D6ECE163EDD5F3B53" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F0BA412B-D081-4145-B0E6-E2F0CCD1A693",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "59B8BA9AA44656F9F97DBDEC345CC6CD3103E7D0" : "CPlusPlusPlusPlusMinus\/",
+    "7A7ED908DB4958BC3C93905D6ECE163EDD5F3B53" : "megaAssignment\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "megaAssignment",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "megaAssignment.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/inperium\/CPlusPlusPlusPlusMinus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "59B8BA9AA44656F9F97DBDEC345CC6CD3103E7D0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/inperium\/megaAssignment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7A7ED908DB4958BC3C93905D6ECE163EDD5F3B53"
+    }
+  ]
+}

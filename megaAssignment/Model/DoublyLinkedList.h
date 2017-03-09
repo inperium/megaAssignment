@@ -9,10 +9,7 @@
 #ifndef DoublyLinkedList_h
 #define DoublyLinkedList_h
 
-#ifndef DoublyLinkedList_h
-#define DoublyLinkedList_h
-
-#include "BiDirectionalNode.hpp"
+#include "BiDirectionalNode.h"
 template <class Type>
 class DoublyLinkedList
 {
@@ -31,9 +28,9 @@ public:
     BiDirectionalNode<Type> * getFront() const;
     BiDirectionalNode<Type> * getEnd() const;
     
-    void setFront(DoublyLinkedList<Type> * front);
+    void setFront(BiDirectionalNode<Type> * front);
     void setSize(int updated);
-    void setEnd(DoublyLinkedList<Type> * end);
+    void setEnd(BiDirectionalNode<Type> * end);
     
     
 };
@@ -70,19 +67,19 @@ BiDirectionalNode<Type> * DoublyLinkedList<Type>  :: getEnd() const
 }
 
 template <class Type>
-void DoublyLinkedList<Type>  :: setEnd(DoublyLinkedList<Type>  * end)
+void DoublyLinkedList<Type>  :: setEnd(BiDirectionalNode<Type>  * end)
 {
     this->end = end;
 }
 
 template <class Type>
-void DoublyLinkedList<Type>  :: setFront(DoublyLinkedList<Type>  * front)
+void DoublyLinkedList<Type>  :: setFront(BiDirectionalNode<Type>  * front)
 {
     this->front = front;
 }
 
 template <class Type>
-void DoublyLinkedList<Type>  :: setSize(int updated)
+void DoublyLinkedList<Type>  :: setSize(int size)
 {
     this->size = size;
 }

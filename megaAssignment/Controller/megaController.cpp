@@ -30,7 +30,7 @@ void megaController :: testNodes()
 
 void megaController :: start()
 {
-    testList();
+    testListTiming();
 }
     
 void megaController :: testIntArray()
@@ -114,14 +114,14 @@ void megaController :: testListTiming()
 {
     DoubleList<int> timingList;
     Timer totalTimer;
-    totalTimerstartTimer();
+    totalTimer.startTimer();
     for(int index = 0; index < 100000; index++)
     {
         timingList.add(rand());
     }
     
     long slowTime [1000];
-    long fastTime[1000]];
+    long fastTime[1000];
     double averageSlow = 000, averageFast = 0.00;
     Timer doubleTimer;
     
@@ -131,13 +131,13 @@ void megaController :: testListTiming()
         doubleTimer.startTimer();
         timingList.getFromIndex(randomIndex);
         doubleTimer.stopTimer();
-        slowTime[index] = doubleTimergetExecuionTimeinMicroseconds();
+        slowTime[index] = doubleTimer.getExecutionTimeInMicroseconds();
         doubleTimer.resetTimer();
         
         doubleTimer.startTimer();
-        timigListgetFroIndxFast(randomIndex);
+        timingList.getFromIndexFast(randomIndex);
         doubleTimer.stopTimer();
-        fastTime[index] = doubleTimer.getExecutionTimeInMidcroseconds();
+        fastTime[index] = doubleTimer.getExecutionTimeInMicroseconds();
         doubleTimer.resetTimer();
         
         averageSlow += slowTime[index];
@@ -145,8 +145,9 @@ void megaController :: testListTiming()
     }
     
     averageSlow = averageSlow/1000.00;
-    averageFst = averageFast/1000.00;
+    averageFast = averageFast/1000.00;
     totalTimer.stopTimer();
     
-    cout << "The average speed for the getFromIndex was " << endl;
+    cout << "The average speed for the getFromIndex was " << averageSlow << " microseconds." << endl;
+    cout << "The aerage speed forthe etFromIndexFasst method was: " << averageFast << " microseconds." << endl;
 }

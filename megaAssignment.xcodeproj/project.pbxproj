@@ -11,6 +11,7 @@
 		D8C3F9A11E4BBAB300353D41 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F99E1E4BBAB300353D41 /* IntNodeArray.cpp */; };
 		D8C3F9A51E4BBABE00353D41 /* megaController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F9A21E4BBABE00353D41 /* megaController.cpp */; };
 		D8C3F9A61E4BBABE00353D41 /* megaRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F9A41E4BBABE00353D41 /* megaRunner.cpp */; };
+		D8DEF48F1E71E2DB00170A3D /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8DEF48D1E71E2DB00170A3D /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		D8D480DE1E5CD99A00A1695E /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = Model/List.h; sourceTree = "<group>"; };
 		D8DEF4881E71DCBF00170A3D /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stack.h; path = Model/Stack.h; sourceTree = "<group>"; };
 		D8DEF4891E71DCF300170A3D /* DoubleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoubleList.h; path = Model/DoubleList.h; sourceTree = "<group>"; };
+		D8DEF48D1E71E2DB00170A3D /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
+		D8DEF48E1E71E2DB00170A3D /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 		D8C339161E490F3000C00315 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D8DEF48D1E71E2DB00170A3D /* Timer.cpp */,
+				D8DEF48E1E71E2DB00170A3D /* Timer.hpp */,
 				D8C3F99C1E4BBAB300353D41 /* IntNode.cpp */,
 				D8C3F99D1E4BBAB300353D41 /* IntNode.hpp */,
 				D8C3F99E1E4BBAB300353D41 /* IntNodeArray.cpp */,
@@ -163,6 +168,7 @@
 				D8C3F9A11E4BBAB300353D41 /* IntNodeArray.cpp in Sources */,
 				D8C3F9A01E4BBAB300353D41 /* IntNode.cpp in Sources */,
 				D8C3F9A51E4BBABE00353D41 /* megaController.cpp in Sources */,
+				D8DEF48F1E71E2DB00170A3D /* Timer.cpp in Sources */,
 				D8C3F9A61E4BBABE00353D41 /* megaRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
