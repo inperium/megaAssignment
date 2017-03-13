@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D84FA2C91E7711F0003C1B43 /* FoodItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D84FA2C71E7711F0003C1B43 /* FoodItem.cpp */; };
 		D8C3F9A01E4BBAB300353D41 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F99C1E4BBAB300353D41 /* IntNode.cpp */; };
 		D8C3F9A11E4BBAB300353D41 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F99E1E4BBAB300353D41 /* IntNodeArray.cpp */; };
 		D8C3F9A51E4BBABE00353D41 /* megaController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F9A21E4BBABE00353D41 /* megaController.cpp */; };
@@ -31,6 +32,8 @@
 		D826964F1E523E7D0046A7F2 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		D8439F471E675D0400983F27 /* DoublyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoublyLinkedList.h; path = Model/DoublyLinkedList.h; sourceTree = "<group>"; };
 		D8439F491E67684F00983F27 /* CircularList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CircularList.h; path = Model/CircularList.h; sourceTree = "<group>"; };
+		D84FA2C71E7711F0003C1B43 /* FoodItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoodItem.cpp; path = Model/FoodItem.cpp; sourceTree = "<group>"; };
+		D84FA2C81E7711F0003C1B43 /* FoodItem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FoodItem.hpp; path = Model/FoodItem.hpp; sourceTree = "<group>"; };
 		D8ABF4901E64C7090011A1F8 /* BiDirectionalNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BiDirectionalNode.h; path = Model/BiDirectionalNode.h; sourceTree = "<group>"; };
 		D8B1DCE41E54E39300354796 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Model/Array.h; sourceTree = "<group>"; };
 		D8C2F4041E6A056D00CE4465 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = Model/Queue.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				D8439F491E67684F00983F27 /* CircularList.h */,
 				D8C2F4041E6A056D00CE4465 /* Queue.h */,
 				D8DEF4891E71DCF300170A3D /* DoubleList.h */,
+				D84FA2C71E7711F0003C1B43 /* FoodItem.cpp */,
+				D84FA2C81E7711F0003C1B43 /* FoodItem.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				D8C3F9A01E4BBAB300353D41 /* IntNode.cpp in Sources */,
 				D8C3F9A51E4BBABE00353D41 /* megaController.cpp in Sources */,
 				D8DEF48F1E71E2DB00170A3D /* Timer.cpp in Sources */,
+				D84FA2C91E7711F0003C1B43 /* FoodItem.cpp in Sources */,
 				D8C3F9A61E4BBABE00353D41 /* megaRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
