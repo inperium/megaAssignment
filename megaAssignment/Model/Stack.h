@@ -45,6 +45,11 @@ Stack<Type> :: ~Stack()
     }
 }
 
+template <class Type>
+void Stack<Type> :: add(Type value)
+{
+    push(value);
+}
 
 template <class Type>
 void Stack<Type> :: push(Type addedThing)
