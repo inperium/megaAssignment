@@ -37,9 +37,9 @@ template <class Type>
 Stack<Type> :: ~Stack()
 {
     BiDirectionalNode<Type> * remove = this->getFront();
-    while(this->getFront != nullptr)
+    while(this->getFront() != nullptr)
     {
-        this->setFront(this->getFront()->getnextPointer());
+        this->setFront(this->getFront()->getNextPointer());
         delete remove;
         remove=this->getFront();
     }
@@ -58,7 +58,7 @@ void Stack<Type> :: push(Type addedThing)
     else
     {
         this->getEnd()->setNextPointer(addToStack);
-        addToStack->setpreviousPointer(this->getend());
+        addToStack->setPreviousPointer(this->getEnd());
     }
     this->setEnd(addToStack);
     this->setSize(this->getSize()+1);
@@ -88,7 +88,7 @@ Type Stack<Type> :: pop()
     delete this->getEnd();
     
     this->setEnd(update);
-    this-setSize(this->getSize() - 1);
+    this->setSize(this->getSize() - 1);
     
     return removed;
 }

@@ -154,7 +154,11 @@ void megaController :: testListTiming()
 
 void megaController  :: testIntStack()
 {
-    
+    Stack<int> numberStack;
+    numberStack.add(2315);
+    numberStack.push(345);
+    int testValue = numberStack.pop();
+    cout << "Testvalue is " <<testValue << " and should be 345" << endl;
 }
 
 void megaController  :: testFoodQueue()
