@@ -151,3 +151,13 @@ void megaController :: testListTiming()
     cout << "The average speed for the getFromIndex was " << averageSlow << " microseconds." << endl;
     cout << "The aerage speed forthe etFromIndexFasst method was: " << averageFast << " microseconds." << endl;
 }
+
+void megaController  :: testIntStack()
+{
+    
+}
+
+void megaController  :: testFoodQueue()
+{
+    Queue<FoodItem> tastyFood;
+}

@@ -9,15 +9,8 @@
 #ifndef FoodItem_hpp
 #define FoodItem_hpp
 
-#include "../Model/Node.hpp"
-#include "../Model/Array.hpp"
-
-#include "../Model/FoodItem.hpp"
-#include "../Model/Node.h"
-#include "../Model/Node.h"
-#include "../Model/Node.h"
-#include "../Model/Node.h"
 #include <string>
+
 using namespace std;
 
 class FoodItem

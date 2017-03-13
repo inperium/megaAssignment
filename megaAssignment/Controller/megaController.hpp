@@ -11,10 +11,14 @@
 
 #include "../Model/Node.hpp"
 #include "../Model/Array.h"
-#include <string>
-#include "List.h"
+#include "../Model/FoodItem.hpp"
+#include "../Model/DoubleList.h"
+#include "../Model/Stack.h"
+#include "../Model/Queue.hpp"
+#include "../Model/CircularList.hpp"
 #include "../Model/DoubleList.h"
 #include "../Model/Timer.hpp"
+#include <string>
 
 using namespace std;
 
@@ -28,6 +32,8 @@ private:
     void testAdvancedFeatures();
     void testList();
     void testListTiming();
+    void testIntStack();
+    void testFoodQueue();
 public:
     megaController();
     void start();
