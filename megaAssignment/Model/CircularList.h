@@ -16,20 +16,20 @@ private:
 
 public:
     CircularList();
-    ~Circularlist();
+    ~CircularList();
     
     void add(Type data);
-    Type remove(int index):
+    Type remove(int index);
 };
 
 template <class Type>
-CircularList<Type> :: CircluarList() : DoublyLinkedList()
+CircularList<Type> :: CircularList() : DoublyLinkedList<Type>()
 {
 
 }
 
 template <class Type>
-void CircluarList<Type> :: add(Type data)
+void CircularList<Type> :: add(Type data)
 {
     
 }

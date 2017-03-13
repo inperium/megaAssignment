@@ -159,5 +159,13 @@ void megaController  :: testIntStack()
 
 void megaController  :: testFoodQueue()
 {
-    Queue<FoodItem> tastyFood;
+    Queue<FoodItem> breakfast;
+    FoodItem taco("El Macho Taco");
+    
+    breakfast.enqueue(taco);
+    FoodItem bacon;
+    breakfast.add(bacon);
+    
+    FoodItem remove = breakfast.dequeue();
+    cout <<"The item removed from the queue was: " << remove.getFoodName() << " and shoudl be: El Macho Taco" << endl;
 }

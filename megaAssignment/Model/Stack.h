@@ -8,7 +8,7 @@
 
 #ifndef Stack_h
 #define Stack_h
-#include "DoublyLinkedList.hpp"
+#include "DoublyLinkedList.h"
 
 using namespace std;
 
@@ -24,8 +24,8 @@ public:
     Type remove(int index);
     Type pop();
     Type peek();
-    Type push(Type data);
-}
+    void push(Type data);
+};
 
 template <class Type>
 Stack<Type> :: Stack() : DoublyLinkedList<Type>()
@@ -36,7 +36,13 @@ Stack<Type> :: Stack() : DoublyLinkedList<Type>()
 template <class Type>
 Stack<Type> :: ~Stack()
 {
-    push(valueToAdd);
+    BiDirectionalNode<Type> * remove = this->getFront();
+    while(this->getFront != nullptr)
+    {
+        this->setFront(this->getFront()->getnextPointer());
+        delete remove;
+        remove=this->getFront();
+    }
 }
 
 
@@ -51,22 +57,22 @@ void Stack<Type> :: push(Type addedThing)
     }
     else
     {
-        this->getEnd()->setNextPointer(addToStack):
+        this->getEnd()->setNextPointer(addToStack);
         addToStack->setpreviousPointer(this->getend());
     }
     this->setEnd(addToStack);
     this->setSize(this->getSize()+1);
 }
-ß
+
 template <class Type>
-void Stack<Type> :: remove(int index)
+Type Stack<Type> :: remove(int index)
 {
     assert(index == this->getSize() -1 && this->getSize()>0);
     return pop();
 }
     
 template <class Type>
-void Stack<Type> :: pop()
+Type Stack<Type> :: pop()
 {
     assert(this->getSize() > 0);
     Type removed = this->getEnd()->getNodeData();
@@ -90,7 +96,7 @@ void Stack<Type> :: pop()
 template <class Type>
 Type Stack<Type> :: peek()
 {
-    assert(this0>getSize() > 0);
+    assert (this->getSize() > 0);
     return this->getEnd()->getNodeData();
 }
     

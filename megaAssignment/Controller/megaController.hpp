@@ -14,8 +14,8 @@
 #include "../Model/FoodItem.hpp"
 #include "../Model/DoubleList.h"
 #include "../Model/Stack.h"
-#include "../Model/Queue.hpp"
-#include "../Model/CircularList.hpp"
+#include "../Model/Queue.h"
+#include "../Model/CircularList.h"
 #include "../Model/DoubleList.h"
 #include "../Model/Timer.hpp"
 #include <string>

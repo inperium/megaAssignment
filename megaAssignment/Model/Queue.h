@@ -27,14 +27,14 @@ public:
 
 
 template <class Type>
-void Queue<Type> :: Queue() : DoublyLinkedList<Type>()
+Queue<Type> :: Queue() : DoublyLinkedList<Type>()
 {
 }
 
 template <class Type>
-void Queue<Type> :: ~Queue()
+Queue<Type> :: ~Queue()
 {
-    BiDirectionalNode<Type. * remove = this->getFront();
+    BiDirectionalNode<Type> * remove = this->getFront();
     while(this->getFront() != nullptr)
     {
         this->setFront(this->getFront()->getNextPointer());
@@ -60,15 +60,15 @@ void Queue<Type> :: add(Type value)
 template <class Type>
 void Queue<Type> :: enqueue(Type instertedValue)
 {
-    BiDirectionalNode<Type> * added = BiDirectionalNode<Type>(insertedValue);
+    BiDirectionalNode<Type> * added = new BiDirectionalNode<Type>(instertedValue);
     
-    if(this->getSize() == 0 || this->getFront == nullptr || this->getEnd() == nullptr)
+    if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)
     {
-        this->Front(added);
+        this->setFront(added);
     }
     else
     {
-        this->getEnd()->setnextPointer(added);
+        this->getEnd()->setNextPointer(added);
     }
     this->setEnd(added);
     this->setSize(this->getSize() + 1);
@@ -99,10 +99,11 @@ template <class Type>
 Type Queue<Type> :: dequeue()
 {
     assert(this->getSize() > 0);
-    Type removedValue = this->getFront()->getNodeData();
-    BiDirectionalNode<Type> * removeMe = front:
     
-    if(this-getSize() == 1)
+    Type removedValue = this->getFront()->getNodeData();
+    BiDirectionalNode<Type> * removeMe = this->getFront();
+    
+    if(this->getSize() == 1)
     {
         this->setEnd(nullptr);
         this->setFront(nullptr);
@@ -117,7 +118,7 @@ Type Queue<Type> :: dequeue()
     return removedValue;
 }
 
-template <class Type.
+template <class Type>
 Type Queue<Type> :: peek()
 {
     assert(this->getSize() > 0);
