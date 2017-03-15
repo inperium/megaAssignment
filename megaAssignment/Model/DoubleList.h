@@ -15,6 +15,7 @@ template <class Type>
 class DoubleList : public DoublyLinkedList<Type>
 {
 private:
+    BiDirectionalNode<Type> * findNode(int index);
 public:
     DoubleList();
     ~DoubleList();
