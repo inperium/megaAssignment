@@ -93,6 +93,7 @@ Type DoubleList<Type> :: remove(int index)
         else  if(index == this->getSize()-1)
         {
             this->setEnd(this->getEnd()->getPreviousPointer());
+            this->getEnd()->setNextPointer(nullptr);
         }
     }
     else
