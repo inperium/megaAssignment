@@ -30,7 +30,7 @@ void megaController :: testNodes()
 
 void megaController :: start()
 {
-    testIntStack();
+    testFoodQueue();
 }
 
 void megaController :: testIntArray()
@@ -171,12 +171,21 @@ void megaController  :: testIntStack()
 void megaController  :: testFoodQueue()
 {
     Queue<FoodItem> breakfast;
-    FoodItem taco("El Macho Taco");
     
+    FoodItem taco("El Macho Taco");
     breakfast.enqueue(taco);
-    FoodItem bacon;
-    breakfast.add(bacon);
     
     FoodItem remove = breakfast.dequeue();
-    cout <<"The item removed from the queue was: " << remove.getFoodName() << " and shoudl be: El Macho Taco" << endl;
+    cout <<"The item removed from the queue was: " << remove.getFoodName() << ". It should be be El Macho Taco." << endl;
+    
+    cout << breakfast.getSize() << endl;
+    
+    FoodItem bacon;
+    breakfast.add(bacon);
+    cout << "The number of breakfast items is: " <<breakfast.getSize() << endl;
+    
+    cout << breakfast.getSize() << endl;
+    
+    FoodItem food = breakfast.peek();
+    cout << "The eaten item is " << food.getFoodName() << ". It should be be El Macho Taco"<< endl;
 }
