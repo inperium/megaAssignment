@@ -77,8 +77,14 @@ Type DoubleList<Type> :: remove(int index)
         BiDirectionalNode<Type> * prev = nodeToTakeOut->getPreviousPointer();
         BiDirectionalNode<Type> * next = nodeToTakeOut->getNextPointer();
         
-        prev->setNextPointer(prev);
-        next->setPreviousPointer(next);
+        if(prev != nullptr)
+        {
+        prev->setPreviousPointer(next);
+        }
+        if(next != nullptr)
+        {
+            next->setNextPointer(prev);
+        }
         
         if(index == 0)
         {
