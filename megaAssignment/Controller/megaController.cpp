@@ -178,13 +178,13 @@ void megaController  :: testFoodQueue()
     FoodItem remove = breakfast.dequeue();
     cout <<"The item removed from the queue was: " << remove.getFoodName() << ". It should be be El Macho Taco." << endl;
     
-    cout << breakfast.getSize() << endl;
+    cout << "The size of the breafast is" << breakfast.getSize() << endl;
     
     FoodItem bacon;
     breakfast.add(bacon);
     cout << "The number of breakfast items is: " <<breakfast.getSize() << endl;
     
-    cout << breakfast.getSize() << endl;
+    cout << "The size of the breafast is" << breakfast.getSize() << endl;
     
     FoodItem food = breakfast.peek();
     cout << "The eaten item is " << food.getFoodName() << ". It should be be El Macho Taco"<< endl;
