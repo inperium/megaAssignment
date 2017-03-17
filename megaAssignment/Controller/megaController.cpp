@@ -30,9 +30,9 @@ void megaController :: testNodes()
 
 void megaController :: start()
 {
-    testListTiming();
+    testIntStack();
 }
-    
+
 void megaController :: testIntArray()
 {
     cout << "Testing the array" << endl;
@@ -155,10 +155,17 @@ void megaController :: testListTiming()
 void megaController  :: testIntStack()
 {
     Stack<int> numberStack;
+    numberStack.add(123);
+    numberStack.add(456);
+    numberStack.add(789);
+    cout << "The size of the list before removing is: " << numberStack.getSize() << endl;
+    numberStack.pop();
+    cout << "The size of the list after removing is: " << numberStack.getSize() << endl;
     numberStack.add(2315);
+    numberStack.peek();
     numberStack.push(345);
-    int testValue = numberStack.pop();
-    cout << "Testvalue is " <<testValue << " and should be 345" << endl;
+    cout << "The test value is " << numberStack.remove(3) << " and should be 345" << endl;
+    cout << "The size of the list after the end is: " << numberStack.getSize() << endl;
 }
 
 void megaController  :: testFoodQueue()
