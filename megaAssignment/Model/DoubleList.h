@@ -193,6 +193,7 @@ int DoubleList<Type> :: nextIndexOf(Type value, int position)
         current = current->getNextPointer();
     }
     current = current->getNextPointer();
+    return nextIndex;
 }
 
 #endif /* DoubleList_h */
