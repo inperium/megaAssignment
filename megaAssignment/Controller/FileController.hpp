@@ -23,7 +23,7 @@ class FileController
 private:
     DoubleList<FoodItem> foodItemList;
 public:
-    DoubleList<FoodItem> readDataFromFile(string filename);
+    DoubleList<FoodItem> readDataFromFileAsList(string filename);
 };
 
 #endif /* FileController_hpp */
