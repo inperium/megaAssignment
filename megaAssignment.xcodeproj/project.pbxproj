@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D84FA2C91E7711F0003C1B43 /* FoodItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D84FA2C71E7711F0003C1B43 /* FoodItem.cpp */; };
+		D8B8DC441E8C2B03004FED31 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8B8DC421E8C2B03004FED31 /* CrimeData.cpp */; };
 		D8C3F9A01E4BBAB300353D41 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F99C1E4BBAB300353D41 /* IntNode.cpp */; };
 		D8C3F9A11E4BBAB300353D41 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F99E1E4BBAB300353D41 /* IntNodeArray.cpp */; };
 		D8C3F9A51E4BBABE00353D41 /* megaController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F9A21E4BBABE00353D41 /* megaController.cpp */; };
@@ -38,6 +39,8 @@
 		D84FA2C81E7711F0003C1B43 /* FoodItem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FoodItem.hpp; path = Model/FoodItem.hpp; sourceTree = "<group>"; };
 		D8ABF4901E64C7090011A1F8 /* BiDirectionalNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BiDirectionalNode.h; path = Model/BiDirectionalNode.h; sourceTree = "<group>"; };
 		D8B1DCE41E54E39300354796 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Model/Array.h; sourceTree = "<group>"; };
+		D8B8DC421E8C2B03004FED31 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = Model/CrimeData.cpp; sourceTree = "<group>"; };
+		D8B8DC431E8C2B03004FED31 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = Model/CrimeData.hpp; sourceTree = "<group>"; };
 		D8C2F4041E6A056D00CE4465 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = Model/Queue.h; sourceTree = "<group>"; };
 		D8C3F99C1E4BBAB300353D41 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		D8C3F99D1E4BBAB300353D41 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 		D8C339161E490F3000C00315 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D8B8DC421E8C2B03004FED31 /* CrimeData.cpp */,
+				D8B8DC431E8C2B03004FED31 /* CrimeData.hpp */,
 				D8DEF48D1E71E2DB00170A3D /* Timer.cpp */,
 				D8DEF48E1E71E2DB00170A3D /* Timer.hpp */,
 				D8C3F99C1E4BBAB300353D41 /* IntNode.cpp */,
@@ -194,6 +199,7 @@
 				D8C3F9A51E4BBABE00353D41 /* megaController.cpp in Sources */,
 				D8DEF48F1E71E2DB00170A3D /* Timer.cpp in Sources */,
 				D8E036541E89A35800353564 /* StructureTester.cpp in Sources */,
+				D8B8DC441E8C2B03004FED31 /* CrimeData.cpp in Sources */,
 				D84FA2C91E7711F0003C1B43 /* FoodItem.cpp in Sources */,
 				D8E036511E89A0DE00353564 /* FileController.cpp in Sources */,
 				D8C3F9A61E4BBABE00353D41 /* megaRunner.cpp in Sources */,
