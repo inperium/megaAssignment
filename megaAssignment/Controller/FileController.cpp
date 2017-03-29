@@ -60,3 +60,22 @@ DoubleList<FoodItem> FileController :: readDataFromFileAsList(string filename)
     
     return dataSource;
 }
+
+void FileController :: writeFoodItemDataStatistis(DoubleList<FoodItem> dataSource, string filename)
+{
+    ofstream saveFile(filename);
+    
+    if(saveFile.is_open())
+    {
+        saveFile << "these are teh contents of the list" << endl;
+        for(int index = 0; index < dataSource.getSize(); index++)
+        {
+            saveFile << "Food Title:" << dataSource.getFromIndex(index).getFoodName() << endl;
+        }
+    }
+    else
+    {
+        cerr << "File unavailable" << endl;
+    }
+    saveFile.close();
+}
