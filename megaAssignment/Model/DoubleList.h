@@ -9,6 +9,7 @@
 #ifndef DoubleList_h
 #define DoubleList_h
 
+#include <assert.h>
 #include "DoublyLinkedList.h"
 
 template <class Type>
@@ -140,7 +141,7 @@ Type DoubleList<Type>:: getFromIndexFast(int index)
 template <class Type>
 Type DoubleList<Type>:: getFromIndex(int index)
 {
-    assert(index >= 0 && index < this->getSize());
+    assert(index >= 0 && index < this->getSize()-1);
     Type valueAtIndex;
     BiDirectionalNode<Type> * reference;
 
