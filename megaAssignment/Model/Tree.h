@@ -9,90 +9,80 @@
 #ifndef Tree_h
 #define Tree_h
 
-#include <assert.h>
-
-template <class Type>
+template<class Type>
 class Tree
 {
 private:
-    int height;
     int size;
+    int height;
     bool complete;
     bool balanced;
-    
 public:
     Tree();
     virtual ~Tree();
     virtual void printToFile() = 0;
-    virtual void inOrderTraversal() = 0;
+    virtual void inOrderTranversal() = 0;
     virtual void preOrderTraversal() = 0;
     virtual void postOrderTraversal() = 0;
     
-    int getHeight() const;
     int getSize() const;
+    int getHeight() const;
     bool isComplete() const;
     bool isBalanced() const;
     
-    void setHeight(int height);
     void setSize(int size);
+    void setHeight(int height);
     void setComplete(bool complete);
     void setBalanced(bool balanced);
     
+    
 };
 
-template <class Type>
-Tree<Type> :: Tree()
+template<class Type>
+Tree<Type>::Tree()
 {
-    hiegiht = 0;
     size = 0;
-    balanced = false;
+    height = 0;
     complete = false;
+    balanced = false;
 }
-
-template <class Type>
-int Tree<Type> :: getHeight() const
+template<class Type>
+int Tree<Type>::getSize() const
 {
-    return this->height;
+    return size;
 }
-
 template <class Type>
-int Tree<Type> :: getSize() const
+int Tree<Type>::getHeight() const
 {
-    return this->size;
+    return height;
 }
-
-template <class Type>
-int Tree<Type> :: isComplete() const
+template<class Type>
+bool Tree<Type> :: isComplete() const
 {
-    return this->complete;
+    return complete;
 }
-
 template <class Type>
-int Tree<Type> :: isBalanced() const
+bool Tree<Type> :: isBalanced() const
 {
-    return this->balanced;
+    return balanced;
 }
-
 template <class Type>
-int Tree<Type> :: setHeight() const
-{
-    this->height = height;
-}
-
-template <class Type>
-int Tree<Type> :: setSize() const
+void Tree<Type> :: setSize(int size)
 {
     this->size = size;
 }
-
 template <class Type>
-int Tree<Type> :: setComplete() const
+void Tree<Type> :: setHeight(int height)
+{
+    this -> height = height;
+}
+template<class Type>
+void Tree<Type>  :: setComplete(bool complete)
 {
     this->complete = complete;
 }
-
-template <class Type>
-int Tree<Type> :: setBalanced() const
+template<class Type>
+void Tree<Type>:: setBalanced(bool balanced)
 {
     this->balanced = balanced;
 }

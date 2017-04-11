@@ -1,88 +1,82 @@
 //
-//  BinarySearchTreeNode.h
+//  BinarySearchTree.h
 //  megaAssignment
 //
 //  Created by Bowen, Isaac on 4/11/17.
 //  Copyright © 2017 Bowen, Isaac. All rights reserved.
 //
 
-#ifndef BinarySearchTreeNode_h
-#define BinarySearchTreeNode_h
+#ifndef BinarySearchTreeNode_hpp
+#define BinarySearchTreeNode_hpp
 
 #include "Node.hpp"
 
-template <class Type>
-class BinarySearchTreeNode : public Node<Type>
+template<class Type>
+class BinarySearchTreeNode: public Node<Type>
+
 {
 private:
     BinarySearchTreeNode<Type> * root;
     BinarySearchTreeNode<Type> * leftChild;
     BinarySearchTreeNode<Type> * rightChild;
-    
 public:
     BinarySearchTreeNode();
-    BinarySearchTreeNode(Type data):
-    
+    BinarySearchTreeNode(Type data);
     BinarySearchTreeNode<Type> * getRootPointer();
-    BinarySearchTreeNode<Type> * getLeftPointer();
-    BinarySearchTreeNode<Type> * getRightPointer();
+    BinarySearchTreeNode<Type> * getLeftChild();
+    BinarySearchTreeNode<Type> * getRightChild();
     
     void setRootPointer(BinarySearchTreeNode<Type> * root);
-    vodi setLeftChild(BinarySearchTreeNode<Type> * left);
-    void setRightChild(BinarySearchTreeNode,Type * right);
+    void setLeftChild(BinarySearchTreeNode<Type> * left);
+    void setRightChild(BinarySearchTreeNode<Type> * right);
 };
-   
-template <class Type>
-BinarySearchTreeNOde<Type> :: BinarySearchTreeNode() : Node<Type> ()
+
+#include <cstddef>
+template<class Type>
+BinarySearchTreeNode<Type>::BinarySearchTreeNode()
 {
-    this->root =  nullptr;
-    this->leftchild = nullptr;
-    this->rightChild =nullptr;
+    this->setNodeData(nullptr);
+    this->root = nullptr;
+    this->leftChild = nullptr;
+    this->rightChild = nullptr;
 }
-    
-template <class Type>
-BinarySearchTreeNode<Type> :: BinarySearchTreeNode(Type data) : Node<Type>(data)
+template<class Type>
+BinarySearchTreeNode<Type>::BinarySearchTreeNode(Type data) :
+Node<Type>(data)
 {
     this->root = nullptr;
     this->leftChild = nullptr;
     this->rightChild = nullptr;
 }
-
-template <class Type>
-BinarySearchTreeNode<Typye> * BinarySearchTreeNode<Type> :: getLeftChild()
-{
-    return this->leftChild;
-}
-    
-template <class Type>
-BinarySearchTreeNode<Typye> * BinarySearchTreeNode<Type> :: getRightChild()
-{
-    return this->rightChild;
-}
-    
 template <class Type>
 BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getRootPointer()
 {
-    return this->root;
+    return root;
 }
-    
 template <class Type>
-BinarySearchTreeNode<Typye> :: setRootPointer(BinarySearchTreeNode<Type> * root)
+BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getLeftChild()
 {
-    this->root = root;
-        
+    return leftChild;
+}
+template<class Type>
+BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getRightChild()
+{
+    return rightChild;
+}
+template<class Type>
+void BinarySearchTreeNode<Type> :: setRootPointer(BinarySearchTreeNode<Type> * root)
+{
+    this -> root = root;
+}
+template <class Type>
+void BinarySearchTreeNode<Type> :: setLeftChild(BinarySearchTreeNode<Type> * left)
+{
+    this->leftChild = left;
+}
+template <class Type>
+void BinarySearchTreeNode<Type> :: setRightChild(BinarySearchTreeNode<Type> * right)
+{
+    this->rightChild = right;
 }
 
-template <class Type>
-void BinnarySearchTreeNode<Type> :: setLeftChild(BinarySearchTreeNode<Type> * left)
-{
-    return leftChild->left;
-}
-
-template <class Type>
-void BinnarySearchTreeNode<Type> :: setRightChild(BinarySearchTreeNode<Type> * left)
-{
-    return rightChild->right;
-}
-    
-#endif /* BinarySearchTreeNode_h */
+#endif /* BinarySearchTree_h */

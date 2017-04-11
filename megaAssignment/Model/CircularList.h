@@ -9,6 +9,8 @@
 #ifndef CircularList_h
 #define CircularList_h
 
+#include "BinarySearchTree.h"
+
 template <class Type>
 class CircularList : DoublyLinkedList<Type>
 {
