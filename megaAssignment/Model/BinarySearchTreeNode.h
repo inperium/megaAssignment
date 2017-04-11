@@ -9,15 +9,15 @@
 #ifndef BinarySearchTreeNode_h
 #define BinarySearchTreeNode_h
 
-#include "Nodehpp"
+#include "Node.hpp"
 
 template <class Type>
 class BinarySearchTreeNode : public Node<Type>
 {
 private:
-    BinarySearchTreeNode<Type. * root;
-    BinarySearchTreeNode<Type. * leftChild;
-    BinarySearchTreeNode<Type. * rightChild;
+    BinarySearchTreeNode<Type> * root;
+    BinarySearchTreeNode<Type> * leftChild;
+    BinarySearchTreeNode<Type> * rightChild;
     
 public:
     BinarySearchTreeNode();
@@ -28,8 +28,8 @@ public:
     BinarySearchTreeNode<Type> * getRightPointer();
     
     void setRootPointer(BinarySearchTreeNode<Type> * root);
-    vodi setLeftChild(BinarySearchTreeNode<TYpe> * left);
-    void setRightChild(BinarySearchTreeNode,TYpe * right);
+    vodi setLeftChild(BinarySearchTreeNode<Type> * left);
+    void setRightChild(BinarySearchTreeNode,Type * right);
 };
    
 template <class Type>
@@ -61,7 +61,7 @@ BinarySearchTreeNode<Typye> * BinarySearchTreeNode<Type> :: getRightChild()
 }
     
 template <class Type>
-BinarySearchTreeNode<Typye> * BinarySearchTreeNode<Type> :: getRootPointer()
+BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getRootPointer()
 {
     return this->root;
 }
@@ -73,13 +73,13 @@ BinarySearchTreeNode<Typye> :: setRootPointer(BinarySearchTreeNode<Type> * root)
         
 }
 
-template <class TYpe>
+template <class Type>
 void BinnarySearchTreeNode<Type> :: setLeftChild(BinarySearchTreeNode<Type> * left)
 {
     return leftChild->left;
 }
-    
-template <class TYpe>
+
+template <class Type>
 void BinnarySearchTreeNode<Type> :: setRightChild(BinarySearchTreeNode<Type> * left)
 {
     return rightChild->right;
