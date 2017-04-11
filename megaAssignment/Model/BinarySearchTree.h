@@ -8,8 +8,10 @@
 
 #ifndef BinarySearchTree_h
 #define BinarySearchTree_h
+
 #include "BinarySearchTreeNode.h"
 #include "Tree.h"
+
 template<class Type>
 class BinarySearchTree: public Tree<Type>
 {
@@ -29,62 +31,74 @@ public:
     void setRoot(BinarySearchTreeNode<Type> * root);
     void printToFile();
 };
+
 template<class Type>
 BinarySearchTree<Type>::BinarySearchTree() :
 Tree<Type>()
 {
     root = nullptr;
 }
+
 template<class Type>
 BinarySearchTree<Type>::~BinarySearchTree()
 {
     
 }
+
 template<class Type>
 void BinarySearchTree<Type>::printToFile()
 {
     
 }
+
 template<class Type>
 void BinarySearchTree<Type>::inOrderTraversal()
 {
     
 }
+
 template<class Type>
 void BinarySearchTree<Type>::preOrderTraversal()
 {
     
 }
+
 template<class Type>
 void BinarySearchTree<Type>::postOrderTraversal()
 {
     
 }
+
 template<class Type>
 void BinarySearchTree<Type>::inOrderTraversal(BinarySearchTreeNode<Type> * root)
 {
     
 }
+
 template<class Type>
 void BinarySearchTree<Type>::preOrderTraversal(BinarySearchTreeNode<Type> * root)
 {
     
 }
+
 template<class Type>
 void BinarySearchTree<Type>::postOrderTraversal(BinarySearchTreeNode<Type> * root)
 {
     
 }
+
 template<class Type>
 BinarySearchTreeNode<Type> * BinarySearchTree<Type>::getRoot()
 {
     return root;
 }
+
 template<class Type>
 void BinarySearchTree<Type>::setRoot(BinarySearchTreeNode<Type> * root)
 {
     this->root = root;
 }
+
 template<class Type>
 int BinarySearchTree<Type>::calculateSize(BinarySearchTreeNode<Type> * start)
 {
