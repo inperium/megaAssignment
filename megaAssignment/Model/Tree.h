@@ -40,4 +40,61 @@ public:
     
 };
 
+template <class Type>
+Tree<Type> :: Tree()
+{
+    hiegiht = 0;
+    size = 0;
+    balanced = false;
+    complete = false;
+}
+
+template <class Type>
+int Tree<Type> :: getHeight() const
+{
+    return this->height;
+}
+
+template <class Type>
+int Tree<Type> :: getSize() const
+{
+    return this->size;
+}
+
+template <class Type>
+int Tree<Type> :: isComplete() const
+{
+    return this->complete;
+}
+
+template <class Type>
+int Tree<Type> :: isBalanced() const
+{
+    return this->balanced;
+}
+
+template <class Type>
+int Tree<Type> :: setHeight() const
+{
+    this->height = height;
+}
+
+template <class Type>
+int Tree<Type> :: setSize() const
+{
+    this->size = size;
+}
+
+template <class Type>
+int Tree<Type> :: setComplete() const
+{
+    this->complete = complete;
+}
+
+template <class Type>
+int Tree<Type> :: setBalanced() const
+{
+    this->balanced = balanced;
+}
+
 #endif /* Tree_h */

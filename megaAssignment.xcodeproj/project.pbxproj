@@ -39,6 +39,7 @@
 		D84FA2C81E7711F0003C1B43 /* FoodItem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FoodItem.hpp; path = Model/FoodItem.hpp; sourceTree = "<group>"; };
 		D8A816E71E9D53CF00C4329B /* BinarySearchTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinarySearchTreeNode.h; path = Model/BinarySearchTreeNode.h; sourceTree = "<group>"; };
 		D8A816E81E9D583500C4329B /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = Model/Tree.h; sourceTree = "<group>"; };
+		D8A816E91E9D596D00C4329B /* BinarySearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
 		D8ABF4901E64C7090011A1F8 /* BiDirectionalNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BiDirectionalNode.h; path = Model/BiDirectionalNode.h; sourceTree = "<group>"; };
 		D8B1DCE41E54E39300354796 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Array.h; path = Model/Array.h; sourceTree = "<group>"; };
 		D8B8DC421E8C2B03004FED31 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = Model/CrimeData.cpp; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 				D84FA2C81E7711F0003C1B43 /* FoodItem.hpp */,
 				D8A816E71E9D53CF00C4329B /* BinarySearchTreeNode.h */,
 				D8A816E81E9D583500C4329B /* Tree.h */,
+				D8A816E91E9D596D00C4329B /* BinarySearchTree.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
