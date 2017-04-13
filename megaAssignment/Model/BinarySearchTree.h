@@ -21,6 +21,8 @@ private:
     void inOrderTraversal(BinarySearchTreeNode<Type> * root);
     void preOrderTraversal(BinarySearchTreeNode<Type> * root);
     void postOrderTraversal(BinarySearchTreeNode<Type> * root);
+    
+    void removeNode(BinarySearchTreeNode<Type> * & removeMe);
 public:
     BinarySearchTree();
     ~BinarySearchTree();
@@ -176,7 +178,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
         }
         else
         {
-            previous->setRighhtChild(insertMe);
+            previous->setRightChild(insertMe);
         }
         insertMe->setRootPointer(previous);
     }
@@ -235,6 +237,119 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
                 removeNode(previous->getRightChild());
             }
         }
+    }
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: removeNode(BinarySearchTreeNode<Type> * & removeMe)
+{
+    BinarySearchTreeNode<Type> * current;
+    BinarySearchTreeNode<Type> * previous;
+    BinarySearchTreeNode<Type> * temp;
+    
+    previous = removeMe->getRootPointer();
+    
+    if(removeMe->getRightChild() == nullptr && removeMe->getLeftChild() == nullptr)
+    {
+        temp = removeMe;
+        removeMe = nullptr;
+        
+        if(previous != nullptr && removeMe->getNodeData() < previous->getNodeData())
+        {
+            previous->setLeftChild(removeMe);
+        }
+        else if(previous != nullptr && removeMe->getNodeData() > previous->getNodeData())
+        {
+            previous->setRightChild(removeMe);
+        }
+        
+        delete temp;
+    }
+    
+    else if(removeMe->getRightChild() == nullptr)
+    {
+        temp = removeMe;
+        removeMe = removeMe->getLeftChild();
+        
+        if(previous != nullptr && temp->getNodeData() < previous->getNodeData())
+        {
+            previous->setLeftChild(removeMe);
+        }
+        else if(previous != nullptr && temp->getNodeData() > previous->getNodeData())
+        {
+            previous->setRightChild(removeMe);
+        }
+        
+        removeMe->setRootPointer(previous);
+        
+        delete temp;
+    }
+    
+    //Has only left
+    else if(removeMe->getRightChild() == nullptr)
+    {
+        temp = removeMe;
+        
+        if(previous != nullptr && temp->getNodeData() < previous->getNodeData())
+        {
+            previous->setLeftChild(removeMe);
+        }
+        else if(previous != nullptr && temp->getNodeData() > previous->getNodeData())
+        {
+            previous->setRightChild(removeMe);
+        }
+        
+        removeMe->setRootPointer(previous);
+        
+        delete temp;
+    }
+    
+    //Has only right
+    else if(removeMe->getLeftChild() == nullptr)
+    {
+        temp = removeMe;
+        removeMe = removeMe->getRightChild();
+        if(previous != nullptr && removeMe->getNodeData() < previous->getNodeData())
+        {
+            previous->setLeftChild(removeMe);
+        }
+        else if(previous->setRightChild(removeMe))
+        {
+            previous->setRightChild(removeMe);
+        }
+                
+        removeMe->setRootPointer(previous);
+        delete temp;
+    }
+    
+    else
+    {
+        current = removeMe->getLeftChild();
+        previous = nullptr;
+        
+        while(current->getRightChild() != nullptr)
+        {
+            previous = current;
+            current = current->getRigthChild();
+        }
+        
+        removeMe->setNodeData(current->getNodeData());
+        
+        if(previous == nullptr)
+        {
+            removeMe->setLeftChild(current->getLeftChild());
+            current->setLeftChild()->setRootPointer(removeMe);
+        }
+        else
+        {
+            previous->setRightChild(current->getLeftChild());
+            if(current->getLeftChild() != nullptr)
+            {
+                current->getLeftChild()->setRootPointer(previous);
+            }
+        }
+        
+        delete current;
     }
 }
 
