@@ -428,18 +428,26 @@ bg=magenta</panel_attributes>
 - height : int (inherited)
 - complete :bool (inherited)
 - balanced : bool (inherited)
+
 --
 +BinarySearchTree() : constructor
 + ~BinarySearchTree(): destructor
 
 + getRoot() : BinarySearchTreeNode&lt;Type&gt; *
-+setRoot(BinarySearchTreeNode&lt;Type&gt; * root) : void
++ setRoot(BinarySearchTreeNode&lt;Type&gt; * root) : void
++ getSize() : int
 
--calculatreSize(BinarySearchTreeNode&lt;Type&gt; *) : int
-
+- calculateSize(BinarySearchTreeNode&lt;Type&gt; *) : int
 - inOrderTraversal(binarySearchTreeNode&lt;Type&gt; *) : void
 - preOrderTraversal(BinaryearchTreeNode&lt;Type&gt; *) : void
-- postOrderTraversal(BinaryearchTreeNode&lt;Type&gt; *) : void</panel_attributes>
+- postOrderTraversal(BinaryearchTreeNode&lt;Type&gt; *) : void
+- removeNode(BinarySearchTreeNOdeType&gt; *) : void
+
++ printToFile(Type): void
++ insert(Type): void
++ contains(Type): bool
++ remove(Type): void
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
