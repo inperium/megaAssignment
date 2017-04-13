@@ -66,19 +66,24 @@ void BinarySearchTree<Type>::inOrderTraversal()
 template<class Type>
 void BinarySearchTree<Type>::preOrderTraversal()
 {
-    
+    preOrderTraversal(root);
 }
 
 template<class Type>
 void BinarySearchTree<Type>::postOrderTraversal()
 {
-    
+    postOrderTraversal(root);
 }
 
 template<class Type>
-void BinarySearchTree<Type>::inOrderTraversal(BinarySearchTreeNode<Type> * root)
+void BinarySearchTree<Type>::inOrderTraversal(BinarySearchTreeNode<Type> * inStart)
 {
-    
+    if(inStart !=nullptr)
+    {
+        inOrderTraversal(inStart->getLeftChild());
+        cout << "Node Contents; " << inStart->getNodeData() << endl;
+        inOrderTraversal(inStart->getRightChild());
+    }
 }
 
 template<class Type>
