@@ -20,8 +20,8 @@ private:
     
     int calculateSize(BinarySearchTreeNode<Type> * root);
     int calculateHeight(BinarySearchTreeNode<Type> * root);
-    int isBalanced(BinarySearchTreeNode<Type> * root);
-    int isComplete(BinarySearchTreeNode<Type> * root);
+    bool isBalanced(BinarySearchTreeNode<Type> * root);
+    bool isComplete(BinarySearchTreeNode<Type> * root);
     
     void inOrderTraversal(BinarySearchTreeNode<Type> * root);
     void preOrderTraversal(BinarySearchTreeNode<Type> * root);
@@ -55,12 +55,6 @@ BinarySearchTree<Type>::BinarySearchTree() :
 Tree<Type>()
 {
     root = nullptr;
-}
-
-template<class Type>
-BinarySearchTree<Type>::~BinarySearchTree()
-{
-    
 }
 
 template<class Type>
@@ -440,10 +434,9 @@ bool BinarySearchTree<Type> :: isBalanced(BinarySearchTreeNode<Type> * start)
 
 
 template <class Type>
-BinarySearchTreeNode<Type> :: BinarySearchTreeNode()
+BinarySearchTree<Type> ::  ~BinarySearchTree()
 {
-    delete leftChild;
-    delete rightChild;
+    delete root;
 }
 
 #endif /* BinarySearchTree_h */
