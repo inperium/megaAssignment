@@ -17,18 +17,25 @@ class BinarySearchTree: public Tree<Type>
 {
 private:
     BinarySearchTreeNode<Type> * root;
-    int calculateSize(BinarySearchTreeNode<Type> * start);
+    
+    int calculateSize(BinarySearchTreeNode<Type> * root);
+    int calculateHeight(BinarySearchTreeNode<Type> * root);
+    int isBalanced(BinarySearchTreeNode<Type> * root);
+    int isComplete(BinarySearchTreeNode<Type> * root);
+    
     void inOrderTraversal(BinarySearchTreeNode<Type> * root);
     void preOrderTraversal(BinarySearchTreeNode<Type> * root);
     void postOrderTraversal(BinarySearchTreeNode<Type> * root);
     
-    void removeNode(BinarySearchTreeNode<Type> * & removeMe);
+    void removeNode(BinarySearchTreeNode<Type> * removeMe);
 public:
     BinarySearchTree();
     ~BinarySearchTree();
+    
     void inOrderTraversal();
     void preOrderTraversal();
     void postOrderTraversal();
+    
     BinarySearchTreeNode<Type> * getRoot();
     void setRoot(BinarySearchTreeNode<Type> * root);
     void printToFile();
@@ -36,6 +43,11 @@ public:
     bool contains(Type value);
     void insert(Type itemToInsert);
     void remove(Type valueRemoved);
+    
+    int getSize();
+    int getHeight();
+    bool isComplete();
+    bool isBalanced();
 };
 
 template<class Type>
@@ -356,6 +368,30 @@ void BinarySearchTree<Type> :: removeNode(BinarySearchTreeNode<Type> * & removeM
         
         delete current;
     }
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: getSize();
+{
+    return calculateSize(root);
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: getHeight();
+{
+    return calculateHeight(root);
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isBalanced();
+{
+    return isBalanced(root);
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete();
+{
+    return isComplete(root);
 }
 
 #endif /* BinarySearchTree_h */
