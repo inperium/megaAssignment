@@ -11,6 +11,9 @@
 
 #include "BinarySearchTreeNode.h"
 #include "Tree.h"
+#include <iostream>
+
+using namespace std;
 
 template<class Type>
 class BinarySearchTree: public Tree<Type>
@@ -21,7 +24,7 @@ private:
     int calculateSize(BinarySearchTreeNode<Type> * root);
     int calculateHeight(BinarySearchTreeNode<Type> * root);
     bool isBalanced(BinarySearchTreeNode<Type> * root);
-    bool isComplete(BinarySearchTreeNode<Type> * root);
+    bool isComplete(BinarySearchTreeNode<Type> * root, int index, int size);
     
     void inOrderTraversal(BinarySearchTreeNode<Type> * root);
     void preOrderTraversal(BinarySearchTreeNode<Type> * root);
@@ -179,7 +182,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
             previous = current;
             if(itemToInsert < current->getNodeData())
             {
-                current = current->getLEftChild();
+                current = current->getLeftChild();
             }
             else if(itemToInsert > current->getNodeData())
             {
@@ -229,11 +232,11 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
                 previous = current;
                 if(getRidOfMe < current->getNodeData())
                 {
-                    current = current->getLeftChild;
+                    current = current->getLeftChild();
                 }
                 else
                 {
-                    current = current->getRightChid();
+                    current = current->getRightChild();
                 }
             }
         }
@@ -402,7 +405,7 @@ int BinarySearchTree<Type> :: calculateSize(BinarySearchTreeNode<Type> * start)
     }
     else
     {
-        count += calculteSize(start->getLeftChild());
+        count += calculateSize(start->getLeftChild());
         count += calculateSize(start->getRightChild());
         return count;
     }
@@ -411,7 +414,6 @@ int BinarySearchTree<Type> :: calculateSize(BinarySearchTreeNode<Type> * start)
 template <class Type>
 int BinarySearchTree<Type> :: calculateHeight(BinarySearchTreeNode<Type> * start)
 {
-    int count = 1;
     if(start == nullptr)
     {
         return 0;
