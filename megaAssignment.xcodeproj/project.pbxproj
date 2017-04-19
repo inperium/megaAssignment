@@ -31,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D80053611EA7EEEC00F7469B /* AVLTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AVLTree.h; path = Model/AVLTree.h; sourceTree = "<group>"; };
 		D826964E1E5234D40046A7F2 /* megaAssignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = megaAssignment; sourceTree = BUILT_PRODUCTS_DIR; };
 		D826964F1E523E7D0046A7F2 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		D8439F471E675D0400983F27 /* DoublyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoublyLinkedList.h; path = Model/DoublyLinkedList.h; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 				D8A816E71E9D53CF00C4329B /* BinarySearchTreeNode.h */,
 				D8A816E81E9D583500C4329B /* Tree.h */,
 				D8A816EA1E9D5E8C00C4329B /* BinarySearchTree.h */,
+				D80053611EA7EEEC00F7469B /* AVLTree.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
