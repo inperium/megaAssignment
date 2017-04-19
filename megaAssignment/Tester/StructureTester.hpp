@@ -19,6 +19,7 @@
 #include "../Model/Queue.h"
 #include "../Model/CircularList.h"
 #include "../Model/FoodItem.hpp"
+#include "../Model/CrimeData.hpp"
 
 #include <string>
 

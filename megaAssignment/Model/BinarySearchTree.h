@@ -38,7 +38,6 @@ public:
     
     BinarySearchTreeNode<Type> * getRoot();
     void setRoot(BinarySearchTreeNode<Type> * root);
-    void printToFile();
     
     bool contains(Type value);
     void insert(Type itemToInsert);
@@ -50,16 +49,33 @@ public:
     bool isBalanced();
 };
 
-template<class Type>
-BinarySearchTree<Type>::BinarySearchTree() :
-Tree<Type>()
+template <class Type>
+BinarySearchTree<Type>::BinarySearchTree():Tree<Type>()
 {
     root = nullptr;
 }
 
-template<class Type>
-void BinarySearchTree<Type>::printToFile()
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete()
 {
+    int index = 0;
+    int size = getSize();
+    
+    return isComplete(root, index, size);
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete(BinarySearchTreeNode<Type> * start, int index, int size)
+{
+    if(start == nullptr)
+    {
+        return true;
+    }
+    if(index>=size)
+    {
+        return false;
+    }
+    return (isComplete(start->getLeftChild(), 2 * index + 1, size) && isComplete(start->getRightChild(), 2 * index + 2, size));
     
 }
 
