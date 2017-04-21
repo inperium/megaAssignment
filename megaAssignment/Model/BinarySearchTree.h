@@ -30,6 +30,9 @@ private:
     void preOrderTraversal(BinarySearchTreeNode<Type> * root);
     void postOrderTraversal(BinarySearchTreeNode<Type> * root);
     
+    BinarySearchTreeNode<Type> * getRightMostChild(BinarySearchTreeNode<Type> * current);
+    BinarySearchTreeNode<Type> * getLeftMostChild(BinarySearchTreeNode<Type> * current);
+    
     void removeNode(BinarySearchTreeNode<Type> * removeMe);
 public:
     BinarySearchTree();
@@ -45,6 +48,9 @@ public:
     bool contains(Type value);
     void insert(Type itemToInsert);
     void remove(Type valueRemoved);
+    
+    Type findMaximum();
+    Type findMinimum();
     
     int getSize();
     int getHeight();
@@ -435,8 +441,8 @@ bool BinarySearchTree<Type> :: isBalanced(BinarySearchTreeNode<Type> * start)
         return true;
     }
     
-    leftHeight = calcualteHeight(start->getleftChild());
-    rightHeight = calculateHeight(start->getLeftChild());
+    leftHeight = calculateHeight(start->getLeftChild());
+    rightHeight = calculateHeight(start->getRightChild());
     
     int heightDifference = abs(leftHeight-rightHeight);
     bool leftBalanced = isBalanced(start->getLeftChild());
@@ -448,6 +454,46 @@ bool BinarySearchTree<Type> :: isBalanced(BinarySearchTreeNode<Type> * start)
     }
     
     return false;
+}
+
+template<class Type>
+BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinarySearchTreeNode<Type> * current)
+{
+    BinarySearchTreeNode<Type> * temp = current;
+    while(temp->getleftChild() != nullptr)
+    {
+        temp = temp->getLeftChild();
+    }
+    
+    return temp;
+}
+
+template <class Type>
+Type BinarySearchTree<Type> :: findMinimum()
+{
+    assert(root != nullptr);
+    BinarySearchTreeNode<Type> * smallest = getLeftMostChild(root);
+    return smallest->getNodeData();
+}
+
+template <class Type>
+Type BinarySearchTree<Type> :: findMaximum()
+{
+    assert(root != nullptr);
+    BinarySearchTreeNode<Type> * largest = getRightMostChild(root);
+    return largest->getNodeData();
+}
+
+template <class Type>
+BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinarySearchTreeNode<Type> * current)
+{
+    BinarySearchTreeNode<Type> * temp = current;
+    while(temp->getRightChild() != nullptr)
+    {
+        temp = temp->getRightChild();
+    }
+    
+    return temp;
 }
 
 
