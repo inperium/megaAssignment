@@ -15,7 +15,6 @@
 		D8C3F9A61E4BBABE00353D41 /* megaRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8C3F9A41E4BBABE00353D41 /* megaRunner.cpp */; };
 		D8DEF48F1E71E2DB00170A3D /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8DEF48D1E71E2DB00170A3D /* Timer.cpp */; };
 		D8E036511E89A0DE00353564 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8E0364F1E89A0DE00353564 /* FileController.cpp */; };
-		D8E036541E89A35800353564 /* StructureTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8E036521E89A35800353564 /* StructureTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,8 +61,6 @@
 		D8DEF48E1E71E2DB00170A3D /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 		D8E0364F1E89A0DE00353564 /* FileController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileController.cpp; path = Controller/FileController.cpp; sourceTree = "<group>"; };
 		D8E036501E89A0DE00353564 /* FileController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FileController.hpp; path = Controller/FileController.hpp; sourceTree = "<group>"; };
-		D8E036521E89A35800353564 /* StructureTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StructureTester.cpp; path = Tester/StructureTester.cpp; sourceTree = "<group>"; };
-		D8E036531E89A35800353564 /* StructureTester.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StructureTester.hpp; path = Tester/StructureTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +79,6 @@
 			children = (
 				D894212D1E4904F10057B2EF /* megaAssignment */,
 				D826964E1E5234D40046A7F2 /* megaAssignment */,
-				D8E036551E89A35E00353564 /* Tester */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,16 +133,6 @@
 				D86C3E3F1EBA59760003AF54 /* HashNode.h */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		D8E036551E89A35E00353564 /* Tester */ = {
-			isa = PBXGroup;
-			children = (
-				D8E036521E89A35800353564 /* StructureTester.cpp */,
-				D8E036531E89A35800353564 /* StructureTester.hpp */,
-			);
-			name = Tester;
-			path = megaAssignment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +196,6 @@
 				D8C3F9A01E4BBAB300353D41 /* IntNode.cpp in Sources */,
 				D8C3F9A51E4BBABE00353D41 /* megaController.cpp in Sources */,
 				D8DEF48F1E71E2DB00170A3D /* Timer.cpp in Sources */,
-				D8E036541E89A35800353564 /* StructureTester.cpp in Sources */,
 				D8B8DC441E8C2B03004FED31 /* CrimeData.cpp in Sources */,
 				D84FA2C91E7711F0003C1B43 /* FoodItem.cpp in Sources */,
 				D8E036511E89A0DE00353564 /* FileController.cpp in Sources */,

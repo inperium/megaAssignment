@@ -1,13 +1,13 @@
 //
-//  megaController.hpp
+//  MegaController.hpp
 //  megaAssignment
 //
 //  Created by Bowen, Isaac on 2/6/17.
 //  Copyright © 2017 Bowen, Isaac. All rights reserved.
 //
 
-#ifndef megaController_hpp
-#define megaController_hpp
+#ifndef MegaController_hpp
+#define MegaController_hpp
 
 #include "../Model/Node.hpp"
 #include "../Model/Array.h"
@@ -22,7 +22,7 @@
 
 using namespace std;
 
-class megaController
+class MegaController
 {
 private:
     void testIntArray();
@@ -30,13 +30,21 @@ private:
     Node<string> wordNode;
     void testNodes();
     void testAdvancedFeatures();
-    void testList();
+    void testListIntro();
     void testListTiming();
     void testIntStack();
     void testFoodQueue();
+    void testCircularList();
+    void testBinarySearchTreeOperations();
+    void testBinarySearchData();
+    void testAVLTreeOperations();
+    void testAVLData();
+    void testList();
+    
 public:
-    megaController();
+    MegaController();
     void start();
+    
 };
 
-#endif /* megaController_hpp */
+#endif /* MegaController_hpp */

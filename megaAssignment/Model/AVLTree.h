@@ -9,8 +9,8 @@
 #ifndef AVLTree_h
 #define AVLTree_h
 
-#include "BinarySearchTreeNode.hpp"
-#include "BinarySearchTree.hpp"
+#include "BinarySearchTreeNode.h"
+#include "BinarySearchTree.h"
 
 template <class Type>
 class AVLTree : public BinarySearchTree<Type>

@@ -6,10 +6,10 @@
 //  Copyright © 2017 Bowen, Isaac. All rights reserved.
 //
 
-#include "megaController.hpp"
+#include "MegaController.hpp"
 
 int main(){
-    megaController * mega = new megaController();
+    MegaController * mega = new MegaController();
     mega->start();
     return 0;
 }

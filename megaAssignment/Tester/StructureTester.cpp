@@ -24,7 +24,7 @@ void StructureTester :: testBinarySearchTreeOperations()
     
     numbers.insert(23465);
     
-    numbers.insert(10); // won't go in
+    numbers.insert(10);
     
     numbers.insert(43243);
     

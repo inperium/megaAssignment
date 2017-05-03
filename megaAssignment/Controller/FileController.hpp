@@ -12,6 +12,8 @@
 #include "../Model/DoubleList.h"
 #include "../Model/FoodItem.hpp"
 #include "../Model/CrimeData.hpp"
+#include "../Model/BinarySearchTree.h"
+#include "../Model/AVLTree.h"
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -23,9 +25,12 @@ class FileController
 {
 private:
     DoubleList<FoodItem> foodItemList;
+    
+    
 public:
-    DoubleList<FoodItem> readDataFromFileAsList(string filename);
-    void writeFoodItemDataStatistis(DoubleList<FoodItem> sourc, string filename);
+    DoubleList<FoodItem> readDataFromFile(string filename);
+    void writeFoodDataStatistics(DoubleList<FoodItem> source, string fileName);
+    BinarySearchTree<CrimeData> readCrimeDataToBinarySearchTree(string filename);
+    AVLTree<CrimeData> readCrimeDataToAVLTree(string filename);
 };
-
 #endif /* FileController_hpp */

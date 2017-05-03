@@ -1,26 +1,43 @@
 //
-//  megaController.cpp
+//  MegaController.cpp
 //  megaAssignment
 //
 //  Created by Bowen, Isaac on 2/6/17.
 //  Copyright © 2017 Bowen, Isaac. All rights reserved.
 //
 
-#include "megaController.hpp"
+#include "MegaController.hpp"
 #include <iostream>
 #include "../Model/IntNodeArray.hpp"
 #include "../Model/List.h"
+#include "FileController.hpp"
+
+#include "../Model/Node.hpp"
+#include "../Model/Array.h"
+#include "../Model/CircularList.h"
+#include "../Model/Queue.h"
+#include "../Model/Stack.h"
+#include "../Model/DoubleList.h"
+#include "../Model/DoublyLinkedList.h"
+#include "../Model/BiDirectionalNode.h"
+#include "../Model/Timer.hpp"
+#include "../Model/FoodItem.hpp"
+#include "../Model/CircularList.h"
+#include "../Controller/FileController.hpp"
+#include "../Model/BinarySearchTreeNode.h"
+#include "../Model/Tree.h"
+#include "../Model/BinarySearchTree.h"
 
 using namespace std;
 
-megaController :: megaController()
+MegaController :: MegaController()
 {
     wordNode = Node<string>("");
     numberNode = Node<int>();
     
 }
 
-void megaController :: testNodes()
+void MegaController :: testNodes()
 {
     cout << "The contents of the Node<string>test" << endl;
     cout << wordNode.getNodeData() << endl;
@@ -28,12 +45,12 @@ void megaController :: testNodes()
     cout << numberNode.getNodeData() << endl;
 }
 
-void megaController :: start()
+void MegaController :: start()
 {
-    testFoodQueue();
+    testAVLTreeOperations();
 }
 
-void megaController :: testIntArray()
+void MegaController :: testIntArray()
 {
     cout << "Testing the array" << endl;
     
@@ -58,7 +75,7 @@ void megaController :: testIntArray()
     }
 }
 
-void megaController :: testAdvancedFeatures()
+void MegaController :: testAdvancedFeatures()
 {
     int showDestructor = 0;
     
@@ -78,7 +95,7 @@ void megaController :: testAdvancedFeatures()
     copiedWords.setAtIndex(3, "Changed the contents of hte copied Array");
 }
 
-void megaController :: testList()
+void MegaController :: testList()
 {
     List<string> theList;
     theList.addFront("method ");
@@ -110,7 +127,7 @@ void megaController :: testList()
     }
 }
 
-void megaController :: testListTiming()
+void MegaController :: testListTiming()
 {
     DoubleList<int> timingList;
     Timer totalTimer;
@@ -152,7 +169,7 @@ void megaController :: testListTiming()
     cout << "The aerage speed forthe etFromIndexFasst method was: " << averageFast << " microseconds." << endl;
 }
 
-void megaController  :: testIntStack()
+void MegaController  :: testIntStack()
 {
     Stack<int> numberStack;
     numberStack.add(123);
@@ -168,7 +185,7 @@ void megaController  :: testIntStack()
     cout << "The size of the list after the end is: " << numberStack.getSize() << endl;
 }
 
-void megaController  :: testFoodQueue()
+void MegaController  :: testFoodQueue()
 {
     Queue<FoodItem> breakfast;
     
@@ -188,4 +205,152 @@ void megaController  :: testFoodQueue()
     
     FoodItem food = breakfast.peek();
     cout << "The eaten item is " << food.getFoodName() << ". It should be be El Macho Taco"<< endl;
+}
+
+void MegaController :: testBinarySearchTreeOperations()
+
+{
+    
+    BinarySearchTree<int> numbers;
+    
+    numbers.insert(9843);
+    
+    numbers.insert(10);
+    
+    numbers.insert(43);
+    
+    numbers.insert(-123);
+    
+    numbers.insert(23465);
+    
+    numbers.insert(10); // won't go in
+    
+    numbers.insert(43243);
+    
+    numbers.insert(-45677654);
+    
+    numbers.insert(92165);
+    
+    
+    
+    cout << "Size should be 8 and is: " << numbers.getSize() << endl;
+    
+    cout << "In order traversal should be: \n\t-45677654 \n\t-123 \n\t10 \n\t43 \n\t9843 \n\t23465 \n\t43243 \n\t92165" << endl;
+    
+    numbers.inOrderTraversal();
+    
+    
+    
+    cout << "Height should be 4 and is: " << numbers.getHeight() << endl;
+    
+    cout << "Balanced should be false || 0 and is: " << numbers.isBalanced() << endl;
+    
+    
+}
+
+void MegaController :: testBinarySearchData()
+
+{
+    
+    FileController fileData;
+    
+    Timer treeTimer;
+    
+    treeTimer.startTimer();
+    
+    BinarySearchTree<CrimeData> crimeTree = fileData.readCrimeDataToBinarySearchTree("/Users/asmi0816/Documents/crime.csv");
+    
+    treeTimer.stopTimer();
+    
+    
+    
+    int count = crimeTree.getSize();
+    
+    int height = crimeTree.getHeight();
+    
+    bool complete = crimeTree.isComplete();
+    
+    bool balanced = crimeTree.isBalanced();
+    
+    
+    
+    cout << "The count of the tree is: " << count << ", the height is " << height << ".\n The tree's balanced status is " << balanced << ", and its complete status is " << complete << endl;
+    
+    cout << "The time to read in the tree was: " << endl;
+    
+    treeTimer.displayTimerInformation();
+}
+
+void MegaController :: testAVLTreeOperations()
+
+{
+    
+    AVLTree<int> numbers;
+    
+    numbers.insert(9843);
+    
+    numbers.insert(10);
+    
+    numbers.insert(43);
+    
+    numbers.insert(-123);
+    
+    numbers.insert(23465);
+    
+    numbers.insert(10); // won't go in
+    
+    numbers.insert(43243);
+    
+    numbers.insert(-45677654);
+    
+    numbers.insert(92165);
+    
+    
+    
+    cout << "Size should be 8 and is: " << numbers.getSize() << endl;
+    
+    cout << "In order traversal should be: \n\t-45677654 \n\t-123 \n\t10 \n\t43 \n\t9843 \n\t23465 \n\t43243 \n\t92165" << endl;
+    
+    numbers.inOrderTraversal();
+    
+    
+    
+    cout << "Height should be 4 and is: " << numbers.getHeight() << endl;
+    
+    cout << "Balanced should be true || 1 and is: " << numbers.isBalanced() << endl;
+    
+}
+
+void MegaController :: testAVLData()
+
+{
+    
+    FileController fileData;
+    
+    Timer treeTimer;
+    
+    treeTimer.startTimer();
+    
+    AVLTree<CrimeData> crimeTree = fileData.readCrimeDataToAVLTree("/Users/cody.henrichsen/Documents/crimes.csv");
+    
+    treeTimer.stopTimer();
+    
+    
+    
+    int count = crimeTree.getSize();
+    
+    int height = crimeTree.getHeight();
+    
+    bool complete = crimeTree.isComplete();
+    
+    bool balanced = crimeTree.isBalanced();
+    
+    
+    
+    cout << "The count of the tree is: " << count << ", the height is " << height << ".\n The tree's balanced status is " << balanced << ", and its complete status is " << complete << endl;
+    
+    cout << "The time to read in the tree was: " << endl;
+    
+    treeTimer.displayTimerInformation();
+    
 }

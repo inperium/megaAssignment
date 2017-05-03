@@ -11,7 +11,7 @@
 
 
 
-DoubleList<FoodItem> FileController :: readDataFromFileAsList(string filename)
+DoubleList<FoodItem> FileController :: readDataFromFile(string filename)
 {
     DoubleList<FoodItem> dataSource;
     string currentCSVLine;
@@ -63,7 +63,7 @@ DoubleList<FoodItem> FileController :: readDataFromFileAsList(string filename)
     return dataSource;
 }
 
-void FileController :: writeFoodItemDataStatistis(DoubleList<FoodItem> dataSource, string filename)
+void FileController :: writeFoodDataStatistics(DoubleList<FoodItem> dataSource, string filename)
 {
     ofstream saveFile(filename);
     
@@ -83,7 +83,6 @@ void FileController :: writeFoodItemDataStatistis(DoubleList<FoodItem> dataSourc
 }
 
 BinarySearchTree<CrimeData> FileController :: readCrimeDataToBinarySearchTree(string filename)
-
 {
     
     BinarySearchTree<CrimeData> crimeData;
