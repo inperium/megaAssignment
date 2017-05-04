@@ -47,7 +47,6 @@ void MegaController :: testNodes()
 
 void MegaController :: start()
 {
-    testAVLTreeOperations();
 }
 
 void MegaController :: testIntArray()
@@ -287,29 +286,31 @@ void MegaController :: testAVLTreeOperations()
     
     AVLTree<int> numbers;
     
-    numbers.insert(9843);
+    numbers.insert(1);
     
-    numbers.insert(10);
+    numbers.insert(3);
     
-    numbers.insert(43);
+    numbers.insert(3);
     
-    numbers.insert(-123);
+    numbers.insert(4);
     
-    numbers.insert(23465);
+    cout << "Size should be 4 and is: " << numbers.getSize() << endl;
     
-    numbers.insert(10); // won't go in
+    numbers.insert(5);
+    cout << "Size should be 5 and is: " << numbers.getSize() << endl;
     
-    numbers.insert(43243);
+    numbers.insert(6);
     
-    numbers.insert(-45677654);
+    numbers.insert(7);
     
-    numbers.insert(92165);
+    numbers.insert(8);
     
-    
+    numbers.insert(9);
     
     cout << "Size should be 8 and is: " << numbers.getSize() << endl;
     
-    cout << "In order traversal should be: \n\t-45677654 \n\t-123 \n\t10 \n\t43 \n\t9843 \n\t23465 \n\t43243 \n\t92165" << endl;
+    
+    cout << "In order traversal should be: \n\t9 \n\t8 \n\t7 \n\t6 \n\t5 \n\t4 \n\t3 \n\t2 \n\t1" << endl;
     
     numbers.inOrderTraversal();
     
