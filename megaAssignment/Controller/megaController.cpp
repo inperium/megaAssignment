@@ -27,6 +27,7 @@
 #include "../Model/BinarySearchTreeNode.h"
 #include "../Model/Tree.h"
 #include "../Model/BinarySearchTree.h"
+#include "../Model/Graph.h"
 
 using namespace std;
 
@@ -47,6 +48,7 @@ void MegaController :: testNodes()
 
 void MegaController :: start()
 {
+    testGraph();
 }
 
 void MegaController :: testIntArray()
@@ -316,7 +318,7 @@ void MegaController :: testAVLTreeOperations()
     
     
     
-    cout << "Height should be 4 and is: " << numbers.getHeight() << endl;
+    cout << "Height should be 4 and is: " << numbers.getHeight()  << endl;
     
     cout << "Balanced should be true || 1 and is: " << numbers.isBalanced() << endl;
     
@@ -354,4 +356,32 @@ void MegaController :: testAVLData()
     
     treeTimer.displayTimerInformation();
     
+}
+
+void MegaController :: testGraph()
+{
+    Graph<string> bonkIO;
+    
+    bonkIO.addVertex("itwillbehuge");
+    bonkIO.addVertex("Straight Weed");
+    bonkIO.addVertex("Apple0");
+    bonkIO.addVertex("Level 40");
+    bonkIO.addVertex("play");
+    bonkIO.addVertex("bonk");
+    bonkIO.addVertex("Sun God");
+    
+    bonkIO.addEdge(0,1);
+    bonkIO.addEdge(0,2);
+    
+    bonkIO.addEdge(0,3);
+    bonkIO.addEdge(1,3);
+    bonkIO.addEdge(2,3);
+    
+    bonkIO.addEdge(3,4);
+    
+    bonkIO.breadthFirstTraversal(bonkIO, 0);
+    
+    cout << endl;
+    
+    bonkIO.depthFirstTraversal(bonkIO, 0);
 }

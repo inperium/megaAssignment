@@ -40,6 +40,7 @@ private:
     void testAVLTreeOperations();
     void testAVLData();
     void testList();
+    void testGraph();
     
 public:
     MegaController();

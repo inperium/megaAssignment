@@ -37,8 +37,9 @@
 		D8439F491E67684F00983F27 /* CircularList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CircularList.h; path = Model/CircularList.h; sourceTree = "<group>"; };
 		D84FA2C71E7711F0003C1B43 /* FoodItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoodItem.cpp; path = Model/FoodItem.cpp; sourceTree = "<group>"; };
 		D84FA2C81E7711F0003C1B43 /* FoodItem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FoodItem.hpp; path = Model/FoodItem.hpp; sourceTree = "<group>"; };
-		D86C3E3E1EBA53520003AF54 /* HashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
-		D86C3E3F1EBA59760003AF54 /* HashNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashNode.h; sourceTree = "<group>"; };
+		D87931301EC4E874001B7539 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Graph.h; path = Model/Graph.h; sourceTree = "<group>"; };
+		D87931311EC4E874001B7539 /* HashNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HashNode.h; path = Model/HashNode.h; sourceTree = "<group>"; };
+		D87931321EC4E874001B7539 /* HashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HashTable.h; path = Model/HashTable.h; sourceTree = "<group>"; };
 		D8A816E71E9D53CF00C4329B /* BinarySearchTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinarySearchTreeNode.h; path = Model/BinarySearchTreeNode.h; sourceTree = "<group>"; };
 		D8A816E81E9D583500C4329B /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = Model/Tree.h; sourceTree = "<group>"; };
 		D8A816EA1E9D5E8C00C4329B /* BinarySearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinarySearchTree.h; path = Model/BinarySearchTree.h; sourceTree = "<group>"; };
@@ -106,31 +107,32 @@
 		D8C339161E490F3000C00315 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D8B1DCE41E54E39300354796 /* Array.h */,
+				D80053611EA7EEEC00F7469B /* AVLTree.h */,
+				D8ABF4901E64C7090011A1F8 /* BiDirectionalNode.h */,
+				D8A816EA1E9D5E8C00C4329B /* BinarySearchTree.h */,
+				D8A816E71E9D53CF00C4329B /* BinarySearchTreeNode.h */,
+				D8439F491E67684F00983F27 /* CircularList.h */,
 				D8B8DC421E8C2B03004FED31 /* CrimeData.cpp */,
 				D8B8DC431E8C2B03004FED31 /* CrimeData.hpp */,
-				D8DEF48D1E71E2DB00170A3D /* Timer.cpp */,
-				D8DEF48E1E71E2DB00170A3D /* Timer.hpp */,
+				D8DEF4891E71DCF300170A3D /* DoubleList.h */,
+				D8439F471E675D0400983F27 /* DoublyLinkedList.h */,
+				D84FA2C71E7711F0003C1B43 /* FoodItem.cpp */,
+				D84FA2C81E7711F0003C1B43 /* FoodItem.hpp */,
+				D87931301EC4E874001B7539 /* Graph.h */,
+				D87931311EC4E874001B7539 /* HashNode.h */,
+				D87931321EC4E874001B7539 /* HashTable.h */,
 				D8C3F99C1E4BBAB300353D41 /* IntNode.cpp */,
 				D8C3F99D1E4BBAB300353D41 /* IntNode.hpp */,
 				D8C3F99E1E4BBAB300353D41 /* IntNodeArray.cpp */,
 				D8C3F99F1E4BBAB300353D41 /* IntNodeArray.hpp */,
 				D8D480DE1E5CD99A00A1695E /* List.h */,
 				D826964F1E523E7D0046A7F2 /* Node.hpp */,
-				D8B1DCE41E54E39300354796 /* Array.h */,
-				D8ABF4901E64C7090011A1F8 /* BiDirectionalNode.h */,
-				D8DEF4881E71DCBF00170A3D /* Stack.h */,
-				D8439F471E675D0400983F27 /* DoublyLinkedList.h */,
-				D8439F491E67684F00983F27 /* CircularList.h */,
 				D8C2F4041E6A056D00CE4465 /* Queue.h */,
-				D8DEF4891E71DCF300170A3D /* DoubleList.h */,
-				D84FA2C71E7711F0003C1B43 /* FoodItem.cpp */,
-				D84FA2C81E7711F0003C1B43 /* FoodItem.hpp */,
-				D8A816E71E9D53CF00C4329B /* BinarySearchTreeNode.h */,
+				D8DEF4881E71DCBF00170A3D /* Stack.h */,
+				D8DEF48D1E71E2DB00170A3D /* Timer.cpp */,
+				D8DEF48E1E71E2DB00170A3D /* Timer.hpp */,
 				D8A816E81E9D583500C4329B /* Tree.h */,
-				D8A816EA1E9D5E8C00C4329B /* BinarySearchTree.h */,
-				D80053611EA7EEEC00F7469B /* AVLTree.h */,
-				D86C3E3E1EBA53520003AF54 /* HashTable.h */,
-				D86C3E3F1EBA59760003AF54 /* HashNode.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
